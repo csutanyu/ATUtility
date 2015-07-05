@@ -7,6 +7,7 @@
 //
 
 #import "NSString+ATUtility.h"
+#import "NSDate+ATUtility.h"
 
 @implementation NSString (ATUtility)
 
@@ -17,6 +18,14 @@
     } else {
         return @"utf-8";
     }
+}
+
+- (NSDate *)dateValueWithDateFormatStyle:(NSDateFormatterStyle)style {
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    dateFormatter.dateStyle = style;
+    dateFormatter.timeStyle = style;
+    dateFormatter.locale = [NSLocale currentLocale];
+    return [dateFormatter dateFromString:self];
 }
 
 - (NSString *)stringWithEncoding:(NSStringEncoding)encoding {

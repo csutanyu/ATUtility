@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6ABBD5E31B48BF86006750FF /* NSDate+TimeAgo.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ABBD5E11B48BF86006750FF /* NSDate+TimeAgo.m */; };
+		6ABBD5E41B48BF86006750FF /* NSDateTimeAgo.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6ABBD5E21B48BF86006750FF /* NSDateTimeAgo.bundle */; };
+		6ABBD5E71B48C031006750FF /* NSDate+ATUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ABBD5E61B48C031006750FF /* NSDate+ATUtility.m */; };
 		ECE9C2081B462C2E009871AD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ECE9C2071B462C2E009871AD /* main.m */; };
 		ECE9C20B1B462C2E009871AD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ECE9C20A1B462C2E009871AD /* AppDelegate.m */; };
 		ECE9C20E1B462C2E009871AD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECE9C20D1B462C2E009871AD /* ViewController.m */; };
@@ -29,6 +32,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6ABBD5E01B48BF86006750FF /* NSDate+TimeAgo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+TimeAgo.h"; sourceTree = "<group>"; };
+		6ABBD5E11B48BF86006750FF /* NSDate+TimeAgo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+TimeAgo.m"; sourceTree = "<group>"; };
+		6ABBD5E21B48BF86006750FF /* NSDateTimeAgo.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = NSDateTimeAgo.bundle; sourceTree = "<group>"; };
+		6ABBD5E51B48C031006750FF /* NSDate+ATUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+ATUtility.h"; sourceTree = "<group>"; };
+		6ABBD5E61B48C031006750FF /* NSDate+ATUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+ATUtility.m"; sourceTree = "<group>"; };
 		ECE9C2021B462C2E009871AD /* ATUtility.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ATUtility.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECE9C2061B462C2E009871AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ECE9C2071B462C2E009871AD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -140,6 +148,11 @@
 			children = (
 				ECE9C22E1B462C7D009871AD /* NSString+ATUtility.h */,
 				ECE9C22F1B462C7D009871AD /* NSString+ATUtility.m */,
+				6ABBD5E01B48BF86006750FF /* NSDate+TimeAgo.h */,
+				6ABBD5E11B48BF86006750FF /* NSDate+TimeAgo.m */,
+				6ABBD5E51B48C031006750FF /* NSDate+ATUtility.h */,
+				6ABBD5E61B48C031006750FF /* NSDate+ATUtility.m */,
+				6ABBD5E21B48BF86006750FF /* NSDateTimeAgo.bundle */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -234,6 +247,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ECE9C2111B462C2E009871AD /* Main.storyboard in Resources */,
+				6ABBD5E41B48BF86006750FF /* NSDateTimeAgo.bundle in Resources */,
 				ECE9C2161B462C2E009871AD /* LaunchScreen.xib in Resources */,
 				ECE9C2131B462C2E009871AD /* Images.xcassets in Resources */,
 			);
@@ -256,8 +270,10 @@
 				ECE9C2331B462CC3009871AD /* UIView+ATUTility.m in Sources */,
 				ECE9C20E1B462C2E009871AD /* ViewController.m in Sources */,
 				ECE9C20B1B462C2E009871AD /* AppDelegate.m in Sources */,
+				6ABBD5E71B48C031006750FF /* NSDate+ATUtility.m in Sources */,
 				ECE9C2081B462C2E009871AD /* main.m in Sources */,
 				ECE9C2301B462C7D009871AD /* NSString+ATUtility.m in Sources */,
+				6ABBD5E31B48BF86006750FF /* NSDate+TimeAgo.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -452,6 +468,7 @@
 				ECE9C2271B462C2E009871AD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ECE9C2281B462C2E009871AD /* Build configuration list for PBXNativeTarget "ATUtilityTests" */ = {
 			isa = XCConfigurationList;
@@ -460,6 +477,7 @@
 				ECE9C22A1B462C2E009871AD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
