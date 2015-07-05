@@ -10,8 +10,9 @@
 		6ABBD5E31B48BF86006750FF /* NSDate+TimeAgo.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ABBD5E11B48BF86006750FF /* NSDate+TimeAgo.m */; };
 		6ABBD5E41B48BF86006750FF /* NSDateTimeAgo.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6ABBD5E21B48BF86006750FF /* NSDateTimeAgo.bundle */; };
 		6ABBD5E71B48C031006750FF /* NSDate+ATUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ABBD5E61B48C031006750FF /* NSDate+ATUtility.m */; };
-		6ABBD5EA1B490774006750FF /* UIView+LTKAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ABBD5E91B490774006750FF /* UIView+LTKAdditions.m */; };
 		6ABBD5ED1B4908BB006750FF /* NSData+ATUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ABBD5EC1B4908BB006750FF /* NSData+ATUtility.m */; };
+		6ABBD5F21B49117F006750FF /* UIView+ATUTility.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ABBD5EF1B49117F006750FF /* UIView+ATUTility.m */; };
+		6ABBD5F31B49117F006750FF /* UIView+LTKAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ABBD5F11B49117F006750FF /* UIView+LTKAdditions.m */; };
 		ECE9C2081B462C2E009871AD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ECE9C2071B462C2E009871AD /* main.m */; };
 		ECE9C20B1B462C2E009871AD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ECE9C20A1B462C2E009871AD /* AppDelegate.m */; };
 		ECE9C20E1B462C2E009871AD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECE9C20D1B462C2E009871AD /* ViewController.m */; };
@@ -20,7 +21,6 @@
 		ECE9C2161B462C2E009871AD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = ECE9C2141B462C2E009871AD /* LaunchScreen.xib */; };
 		ECE9C2221B462C2E009871AD /* ATUtilityTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ECE9C2211B462C2E009871AD /* ATUtilityTests.m */; };
 		ECE9C2301B462C7D009871AD /* NSString+ATUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = ECE9C22F1B462C7D009871AD /* NSString+ATUtility.m */; };
-		ECE9C2331B462CC3009871AD /* UIView+ATUTility.m in Sources */ = {isa = PBXBuildFile; fileRef = ECE9C2321B462CC3009871AD /* UIView+ATUTility.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,10 +39,12 @@
 		6ABBD5E21B48BF86006750FF /* NSDateTimeAgo.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = NSDateTimeAgo.bundle; sourceTree = "<group>"; };
 		6ABBD5E51B48C031006750FF /* NSDate+ATUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+ATUtility.h"; sourceTree = "<group>"; };
 		6ABBD5E61B48C031006750FF /* NSDate+ATUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+ATUtility.m"; sourceTree = "<group>"; };
-		6ABBD5E81B490774006750FF /* UIView+LTKAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+LTKAdditions.h"; path = "ATUtility/ATUtility/Foundation/UIView+LTKAdditions.h"; sourceTree = SOURCE_ROOT; };
-		6ABBD5E91B490774006750FF /* UIView+LTKAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+LTKAdditions.m"; path = "ATUtility/ATUtility/Foundation/UIView+LTKAdditions.m"; sourceTree = SOURCE_ROOT; };
 		6ABBD5EB1B4908BB006750FF /* NSData+ATUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+ATUtility.h"; sourceTree = "<group>"; };
 		6ABBD5EC1B4908BB006750FF /* NSData+ATUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+ATUtility.m"; sourceTree = "<group>"; };
+		6ABBD5EE1B49117F006750FF /* UIView+ATUTility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ATUTility.h"; sourceTree = "<group>"; };
+		6ABBD5EF1B49117F006750FF /* UIView+ATUTility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ATUTility.m"; sourceTree = "<group>"; };
+		6ABBD5F01B49117F006750FF /* UIView+LTKAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+LTKAdditions.h"; sourceTree = "<group>"; };
+		6ABBD5F11B49117F006750FF /* UIView+LTKAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+LTKAdditions.m"; sourceTree = "<group>"; };
 		ECE9C2021B462C2E009871AD /* ATUtility.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ATUtility.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECE9C2061B462C2E009871AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ECE9C2071B462C2E009871AD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -58,8 +60,6 @@
 		ECE9C2211B462C2E009871AD /* ATUtilityTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATUtilityTests.m; sourceTree = "<group>"; };
 		ECE9C22E1B462C7D009871AD /* NSString+ATUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+ATUtility.h"; sourceTree = "<group>"; };
 		ECE9C22F1B462C7D009871AD /* NSString+ATUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+ATUtility.m"; sourceTree = "<group>"; };
-		ECE9C2311B462CC3009871AD /* UIView+ATUTility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ATUTility.h"; sourceTree = "<group>"; };
-		ECE9C2321B462CC3009871AD /* UIView+ATUTility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ATUTility.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,10 +168,10 @@
 		ECE9C22D1B462C56009871AD /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
-				6ABBD5E81B490774006750FF /* UIView+LTKAdditions.h */,
-				6ABBD5E91B490774006750FF /* UIView+LTKAdditions.m */,
-				ECE9C2311B462CC3009871AD /* UIView+ATUTility.h */,
-				ECE9C2321B462CC3009871AD /* UIView+ATUTility.m */,
+				6ABBD5EE1B49117F006750FF /* UIView+ATUTility.h */,
+				6ABBD5EF1B49117F006750FF /* UIView+ATUTility.m */,
+				6ABBD5F01B49117F006750FF /* UIView+LTKAdditions.h */,
+				6ABBD5F11B49117F006750FF /* UIView+LTKAdditions.m */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -277,14 +277,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ECE9C2331B462CC3009871AD /* UIView+ATUTility.m in Sources */,
 				ECE9C20E1B462C2E009871AD /* ViewController.m in Sources */,
 				6ABBD5ED1B4908BB006750FF /* NSData+ATUtility.m in Sources */,
+				6ABBD5F31B49117F006750FF /* UIView+LTKAdditions.m in Sources */,
+				6ABBD5F21B49117F006750FF /* UIView+ATUTility.m in Sources */,
 				ECE9C20B1B462C2E009871AD /* AppDelegate.m in Sources */,
 				6ABBD5E71B48C031006750FF /* NSDate+ATUtility.m in Sources */,
 				ECE9C2081B462C2E009871AD /* main.m in Sources */,
 				ECE9C2301B462C7D009871AD /* NSString+ATUtility.m in Sources */,
-				6ABBD5EA1B490774006750FF /* UIView+LTKAdditions.m in Sources */,
 				6ABBD5E31B48BF86006750FF /* NSDate+TimeAgo.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
