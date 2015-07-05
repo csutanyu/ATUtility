@@ -20,10 +20,10 @@
     }
 }
 
-- (NSDate *)dateValueWithDateFormatStyle:(NSDateFormatterStyle)style {
+- (NSDate *)dateWithDateStyle:(NSDateFormatterStyle)dateStyle timeStyle:(NSDateFormatterStyle)timeStyle {
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
-    dateFormatter.dateStyle = style;
-    dateFormatter.timeStyle = style;
+    dateFormatter.dateStyle = dateStyle;
+    dateFormatter.timeStyle = timeStyle;
     dateFormatter.locale = [NSLocale currentLocale];
     return [dateFormatter dateFromString:self];
 }

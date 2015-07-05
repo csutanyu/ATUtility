@@ -12,7 +12,7 @@
 
 + (NSString *)descriptionOfNSStringEncoding:(NSStringEncoding)encoding;
 
-- (NSDate *)dateValueWithDateFormatStyle:(NSDateFormatterStyle)style;
+- (NSDate *)dateWithDateStyle:(NSDateFormatterStyle)dateStyle timeStyle:(NSDateFormatterStyle)timeStyle;
 
 - (NSString *)stringWithEncoding:(NSStringEncoding)encoding;
 
