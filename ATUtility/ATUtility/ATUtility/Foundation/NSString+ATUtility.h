@@ -16,4 +16,11 @@
 
 - (NSString *)stringWithEncoding:(NSStringEncoding)encoding;
 
+
+- (NSString *)AES256EncryptWithKey:(NSString *)key;
+- (NSString *)AES256DecryptWithKey:(NSString *)key;
+- (NSString *)MD5;
+
+- (NSString *)urlencode;
+
 @end

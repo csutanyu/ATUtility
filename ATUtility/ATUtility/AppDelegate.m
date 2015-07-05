@@ -19,6 +19,7 @@
     // Override point for customization after application launch.
 #ifdef __IPHONE_5_0
     NSLog(@"");
+    NSString *url;
 #endif
     return YES;
 }
