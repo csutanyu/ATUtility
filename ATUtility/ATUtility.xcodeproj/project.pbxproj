@@ -13,6 +13,7 @@
 		6ABBD5ED1B4908BB006750FF /* NSData+ATUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ABBD5EC1B4908BB006750FF /* NSData+ATUtility.m */; };
 		6ABBD5F21B49117F006750FF /* UIView+ATUTility.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ABBD5EF1B49117F006750FF /* UIView+ATUTility.m */; };
 		6ABBD5F31B49117F006750FF /* UIView+LTKAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ABBD5F11B49117F006750FF /* UIView+LTKAdditions.m */; };
+		EC155F171B5395B8007B91FE /* NSObject+ATUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = EC155F161B5395B8007B91FE /* NSObject+ATUtility.m */; };
 		ECE9C2081B462C2E009871AD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ECE9C2071B462C2E009871AD /* main.m */; };
 		ECE9C20B1B462C2E009871AD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ECE9C20A1B462C2E009871AD /* AppDelegate.m */; };
 		ECE9C20E1B462C2E009871AD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECE9C20D1B462C2E009871AD /* ViewController.m */; };
@@ -45,6 +46,8 @@
 		6ABBD5EF1B49117F006750FF /* UIView+ATUTility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ATUTility.m"; sourceTree = "<group>"; };
 		6ABBD5F01B49117F006750FF /* UIView+LTKAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+LTKAdditions.h"; sourceTree = "<group>"; };
 		6ABBD5F11B49117F006750FF /* UIView+LTKAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+LTKAdditions.m"; sourceTree = "<group>"; };
+		EC155F151B5395B8007B91FE /* NSObject+ATUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+ATUtility.h"; sourceTree = "<group>"; };
+		EC155F161B5395B8007B91FE /* NSObject+ATUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+ATUtility.m"; sourceTree = "<group>"; };
 		ECE9C2021B462C2E009871AD /* ATUtility.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ATUtility.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECE9C2061B462C2E009871AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ECE9C2071B462C2E009871AD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -160,6 +163,8 @@
 				6ABBD5E61B48C031006750FF /* NSDate+ATUtility.m */,
 				6ABBD5EB1B4908BB006750FF /* NSData+ATUtility.h */,
 				6ABBD5EC1B4908BB006750FF /* NSData+ATUtility.m */,
+				EC155F151B5395B8007B91FE /* NSObject+ATUtility.h */,
+				EC155F161B5395B8007B91FE /* NSObject+ATUtility.m */,
 				6ABBD5E21B48BF86006750FF /* NSDateTimeAgo.bundle */,
 			);
 			path = Foundation;
@@ -280,6 +285,7 @@
 				ECE9C20E1B462C2E009871AD /* ViewController.m in Sources */,
 				6ABBD5ED1B4908BB006750FF /* NSData+ATUtility.m in Sources */,
 				6ABBD5F31B49117F006750FF /* UIView+LTKAdditions.m in Sources */,
+				EC155F171B5395B8007B91FE /* NSObject+ATUtility.m in Sources */,
 				6ABBD5F21B49117F006750FF /* UIView+ATUTility.m in Sources */,
 				ECE9C20B1B462C2E009871AD /* AppDelegate.m in Sources */,
 				6ABBD5E71B48C031006750FF /* NSDate+ATUtility.m in Sources */,

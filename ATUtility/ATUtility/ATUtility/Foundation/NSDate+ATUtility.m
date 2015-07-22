@@ -202,7 +202,7 @@ static const unsigned componentFlags = (CalendarUnitYear| CalendarUnitMonth | Ca
     NSDateComponents *components2 = [[NSDate currentCalendar] components:componentFlags fromDate:aDate];
 
     // Must be same week. 12/31 and 1/1 will both be week "1" if they are in the same week
-#ifdef __IPHONE_5_0
+#ifdef __IPHONE_8_0
     if (components1.weekOfYear != components2.weekOfYear) return NO;
 #else
     if (components1.week != components2.week) return NO;
