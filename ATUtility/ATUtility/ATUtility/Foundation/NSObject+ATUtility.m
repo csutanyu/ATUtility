@@ -2,11 +2,11 @@
 //  NSObject+ATUtility.m
 //  ATUtility
 //
-//  Created by arvin.tan on 7/13/15.
-//  Copyright (c) 2015 arvin.tan. All rights reserved.
+//  Created by tanyu on 7/5/15.
 //
 
 #import "NSObject+ATUtility.h"
+#import <UIKit/UIKit.h>
 #import <AudioToolbox/AudioToolbox.h>
 
 
@@ -21,6 +21,10 @@
 
 - (void)vibrate {
     AudioServicesPlaySystemSound(kSystemSoundID_Vibrate);
+}
+
+- (void)dismissKeyBoard {
+    [[UIApplication sharedApplication] sendAction:@selector(resignFirstResponder) to:nil from:nil forEvent:nil];
 }
 
 @end
