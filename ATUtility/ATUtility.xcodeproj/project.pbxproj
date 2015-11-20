@@ -15,6 +15,8 @@
 		6ABBD5F21B49117F006750FF /* UIView+ATUTility.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ABBD5EF1B49117F006750FF /* UIView+ATUTility.m */; };
 		6ABBD5F31B49117F006750FF /* UIView+LTKAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ABBD5F11B49117F006750FF /* UIView+LTKAdditions.m */; };
 		6ABBD5F61B491235006750FF /* NSObject+ATUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ABBD5F51B491235006750FF /* NSObject+ATUtility.m */; };
+		EC2D64181BFEAE1800D00EBF /* UIDevice+ATUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = EC2D64171BFEAE1800D00EBF /* UIDevice+ATUtility.m */; };
+		EC2D641B1BFEAF0B00D00EBF /* UIImage+ATUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = EC2D641A1BFEAF0B00D00EBF /* UIImage+ATUtility.m */; };
 		ECE9C2081B462C2E009871AD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ECE9C2071B462C2E009871AD /* main.m */; };
 		ECE9C20B1B462C2E009871AD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ECE9C20A1B462C2E009871AD /* AppDelegate.m */; };
 		ECE9C20E1B462C2E009871AD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECE9C20D1B462C2E009871AD /* ViewController.m */; };
@@ -51,6 +53,10 @@
 		6ABBD5F11B49117F006750FF /* UIView+LTKAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+LTKAdditions.m"; sourceTree = "<group>"; };
 		6ABBD5F41B491235006750FF /* NSObject+ATUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+ATUtility.h"; sourceTree = "<group>"; };
 		6ABBD5F51B491235006750FF /* NSObject+ATUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+ATUtility.m"; sourceTree = "<group>"; };
+		EC2D64161BFEAE1800D00EBF /* UIDevice+ATUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+ATUtility.h"; sourceTree = "<group>"; };
+		EC2D64171BFEAE1800D00EBF /* UIDevice+ATUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+ATUtility.m"; sourceTree = "<group>"; };
+		EC2D64191BFEAF0B00D00EBF /* UIImage+ATUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ATUtility.h"; sourceTree = "<group>"; };
+		EC2D641A1BFEAF0B00D00EBF /* UIImage+ATUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ATUtility.m"; sourceTree = "<group>"; };
 		ECE9C2021B462C2E009871AD /* ATUtility.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ATUtility.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECE9C2061B462C2E009871AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ECE9C2071B462C2E009871AD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -168,8 +174,6 @@
 				6ABBD5E61B48C031006750FF /* NSDate+ATUtility.m */,
 				6ABBD5EB1B4908BB006750FF /* NSData+ATUtility.h */,
 				6ABBD5EC1B4908BB006750FF /* NSData+ATUtility.m */,
-				EC155F151B5395B8007B91FE /* NSObject+ATUtility.h */,
-				EC155F161B5395B8007B91FE /* NSObject+ATUtility.m */,
 				6ABBD5E21B48BF86006750FF /* NSDateTimeAgo.bundle */,
 			);
 			path = Foundation;
@@ -184,6 +188,10 @@
 				6ABBD5EF1B49117F006750FF /* UIView+ATUTility.m */,
 				6ABBD5F01B49117F006750FF /* UIView+LTKAdditions.h */,
 				6ABBD5F11B49117F006750FF /* UIView+LTKAdditions.m */,
+				EC2D64161BFEAE1800D00EBF /* UIDevice+ATUtility.h */,
+				EC2D64171BFEAE1800D00EBF /* UIDevice+ATUtility.m */,
+				EC2D64191BFEAF0B00D00EBF /* UIImage+ATUtility.h */,
+				EC2D641A1BFEAF0B00D00EBF /* UIImage+ATUtility.m */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -290,6 +298,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ECE9C20E1B462C2E009871AD /* ViewController.m in Sources */,
+				EC2D64181BFEAE1800D00EBF /* UIDevice+ATUtility.m in Sources */,
 				6ABBD5ED1B4908BB006750FF /* NSData+ATUtility.m in Sources */,
 				6ABBD5F31B49117F006750FF /* UIView+LTKAdditions.m in Sources */,
 				6ABBD5F61B491235006750FF /* NSObject+ATUtility.m in Sources */,
@@ -299,6 +308,7 @@
 				6A5832551B7EE7D9007967F2 /* DismissKeyboardWindow.m in Sources */,
 				ECE9C2081B462C2E009871AD /* main.m in Sources */,
 				ECE9C2301B462C7D009871AD /* NSString+ATUtility.m in Sources */,
+				EC2D641B1BFEAF0B00D00EBF /* UIImage+ATUtility.m in Sources */,
 				6ABBD5E31B48BF86006750FF /* NSDate+TimeAgo.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
