@@ -18,6 +18,8 @@
 		EC2D64181BFEAE1800D00EBF /* UIDevice+ATUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = EC2D64171BFEAE1800D00EBF /* UIDevice+ATUtility.m */; };
 		EC2D641B1BFEAF0B00D00EBF /* UIImage+ATUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = EC2D641A1BFEAF0B00D00EBF /* UIImage+ATUtility.m */; };
 		EC54C7C01C4E24E000684811 /* UIWindow+ATUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = EC54C7BF1C4E24E000684811 /* UIWindow+ATUtility.m */; };
+		EC71E6721C741EA000CF5FC8 /* LoggerClient.m in Sources */ = {isa = PBXBuildFile; fileRef = EC71E6701C741EA000CF5FC8 /* LoggerClient.m */; };
+		EC71E6761C74205900CF5FC8 /* EACoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = EC71E6751C74205900CF5FC8 /* EACoordinator.m */; };
 		ECE9C2081B462C2E009871AD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ECE9C2071B462C2E009871AD /* main.m */; };
 		ECE9C20B1B462C2E009871AD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ECE9C20A1B462C2E009871AD /* AppDelegate.m */; };
 		ECE9C20E1B462C2E009871AD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECE9C20D1B462C2E009871AD /* ViewController.m */; };
@@ -60,6 +62,11 @@
 		EC2D641A1BFEAF0B00D00EBF /* UIImage+ATUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ATUtility.m"; sourceTree = "<group>"; };
 		EC54C7BE1C4E24E000684811 /* UIWindow+ATUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWindow+ATUtility.h"; sourceTree = "<group>"; };
 		EC54C7BF1C4E24E000684811 /* UIWindow+ATUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWindow+ATUtility.m"; sourceTree = "<group>"; };
+		EC71E66F1C741EA000CF5FC8 /* LoggerClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoggerClient.h; sourceTree = "<group>"; };
+		EC71E6701C741EA000CF5FC8 /* LoggerClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoggerClient.m; sourceTree = "<group>"; };
+		EC71E6711C741EA000CF5FC8 /* LoggerCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoggerCommon.h; sourceTree = "<group>"; };
+		EC71E6741C74205900CF5FC8 /* EACoordinator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EACoordinator.h; sourceTree = "<group>"; };
+		EC71E6751C74205900CF5FC8 /* EACoordinator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EACoordinator.m; sourceTree = "<group>"; };
 		ECE9C2021B462C2E009871AD /* ATUtility.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ATUtility.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECE9C2061B462C2E009871AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ECE9C2071B462C2E009871AD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -95,6 +102,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EC71E6691C741DEA00CF5FC8 /* ExternalAccessory */ = {
+			isa = PBXGroup;
+			children = (
+				EC71E6741C74205900CF5FC8 /* EACoordinator.h */,
+				EC71E6751C74205900CF5FC8 /* EACoordinator.m */,
+			);
+			path = ExternalAccessory;
+			sourceTree = "<group>";
+		};
+		EC71E66D1C741EA000CF5FC8 /* ThirdpartyLibrary */ = {
+			isa = PBXGroup;
+			children = (
+				EC71E66E1C741EA000CF5FC8 /* NSLogger */,
+			);
+			path = ThirdpartyLibrary;
+			sourceTree = "<group>";
+		};
+		EC71E66E1C741EA000CF5FC8 /* NSLogger */ = {
+			isa = PBXGroup;
+			children = (
+				EC71E66F1C741EA000CF5FC8 /* LoggerClient.h */,
+				EC71E6701C741EA000CF5FC8 /* LoggerClient.m */,
+				EC71E6711C741EA000CF5FC8 /* LoggerCommon.h */,
+			);
+			path = NSLogger;
+			sourceTree = "<group>";
+		};
 		ECE9C1F91B462C2E009871AD = {
 			isa = PBXGroup;
 			children = (
@@ -116,6 +150,7 @@
 		ECE9C2041B462C2E009871AD /* ATUtility */ = {
 			isa = PBXGroup;
 			children = (
+				EC71E66D1C741EA000CF5FC8 /* ThirdpartyLibrary */,
 				ECE9C22B1B462C56009871AD /* ATUtility */,
 				ECE9C2091B462C2E009871AD /* AppDelegate.h */,
 				ECE9C20A1B462C2E009871AD /* AppDelegate.m */,
@@ -158,6 +193,7 @@
 		ECE9C22B1B462C56009871AD /* ATUtility */ = {
 			isa = PBXGroup;
 			children = (
+				EC71E6691C741DEA00CF5FC8 /* ExternalAccessory */,
 				ECE9C22C1B462C56009871AD /* Foundation */,
 				ECE9C22D1B462C56009871AD /* UIKit */,
 			);
@@ -306,9 +342,11 @@
 				EC2D64181BFEAE1800D00EBF /* UIDevice+ATUtility.m in Sources */,
 				6ABBD5ED1B4908BB006750FF /* NSData+ATUtility.m in Sources */,
 				EC54C7C01C4E24E000684811 /* UIWindow+ATUtility.m in Sources */,
+				EC71E6761C74205900CF5FC8 /* EACoordinator.m in Sources */,
 				6ABBD5F31B49117F006750FF /* UIView+LTKAdditions.m in Sources */,
 				6ABBD5F61B491235006750FF /* NSObject+ATUtility.m in Sources */,
 				6ABBD5F21B49117F006750FF /* UIView+ATUTility.m in Sources */,
+				EC71E6721C741EA000CF5FC8 /* LoggerClient.m in Sources */,
 				ECE9C20B1B462C2E009871AD /* AppDelegate.m in Sources */,
 				6ABBD5E71B48C031006750FF /* NSDate+ATUtility.m in Sources */,
 				6A5832551B7EE7D9007967F2 /* DismissKeyboardWindow.m in Sources */,
