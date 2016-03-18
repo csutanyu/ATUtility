@@ -31,6 +31,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		EC597F111C9B95C40089B810 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EC597F0D1C9B95C40089B810 /* H264DecoderForiOS.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EC6C56DF1C7EA35C00174035;
+			remoteInfo = H264DecoderForiOS;
+		};
 		ECE9C21C1B462C2E009871AD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = ECE9C1FA1B462C2E009871AD /* Project object */;
@@ -62,6 +69,7 @@
 		EC2D641A1BFEAF0B00D00EBF /* UIImage+ATUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ATUtility.m"; sourceTree = "<group>"; };
 		EC54C7BE1C4E24E000684811 /* UIWindow+ATUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWindow+ATUtility.h"; sourceTree = "<group>"; };
 		EC54C7BF1C4E24E000684811 /* UIWindow+ATUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWindow+ATUtility.m"; sourceTree = "<group>"; };
+		EC597F0D1C9B95C40089B810 /* H264DecoderForiOS.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = H264DecoderForiOS.xcodeproj; path = H264Decoder/H264DecoderForiOS/H264DecoderForiOS.xcodeproj; sourceTree = "<group>"; };
 		EC71E66F1C741EA000CF5FC8 /* LoggerClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoggerClient.h; sourceTree = "<group>"; };
 		EC71E6701C741EA000CF5FC8 /* LoggerClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoggerClient.m; sourceTree = "<group>"; };
 		EC71E6711C741EA000CF5FC8 /* LoggerCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoggerCommon.h; sourceTree = "<group>"; };
@@ -102,6 +110,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EC597F0E1C9B95C40089B810 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EC597F121C9B95C40089B810 /* H264DecoderForiOS.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		EC71E6691C741DEA00CF5FC8 /* ExternalAccessory */ = {
 			isa = PBXGroup;
 			children = (
@@ -132,6 +148,7 @@
 		ECE9C1F91B462C2E009871AD = {
 			isa = PBXGroup;
 			children = (
+				EC597F0D1C9B95C40089B810 /* H264DecoderForiOS.xcodeproj */,
 				ECE9C2041B462C2E009871AD /* ATUtility */,
 				ECE9C21E1B462C2E009871AD /* ATUtilityTests */,
 				ECE9C2031B462C2E009871AD /* Products */,
@@ -304,6 +321,12 @@
 			mainGroup = ECE9C1F91B462C2E009871AD;
 			productRefGroup = ECE9C2031B462C2E009871AD /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = EC597F0E1C9B95C40089B810 /* Products */;
+					ProjectRef = EC597F0D1C9B95C40089B810 /* H264DecoderForiOS.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				ECE9C2011B462C2E009871AD /* ATUtility */,
@@ -311,6 +334,16 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		EC597F121C9B95C40089B810 /* H264DecoderForiOS.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = H264DecoderForiOS.app;
+			remoteRef = EC597F111C9B95C40089B810 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		ECE9C2001B462C2E009871AD /* Resources */ = {
