@@ -21,7 +21,34 @@
 		EC6046C91CDC27B8006214DD /* UIImage+Blur.m in Sources */ = {isa = PBXBuildFile; fileRef = EC6046C81CDC27B8006214DD /* UIImage+Blur.m */; };
 		EC6046CD1CDC2989006214DD /* UIScreen+ATUtitlity.m in Sources */ = {isa = PBXBuildFile; fileRef = EC6046CC1CDC2989006214DD /* UIScreen+ATUtitlity.m */; };
 		EC6046D01CDC2A25006214DD /* UITextField+ATUtitlity.m in Sources */ = {isa = PBXBuildFile; fileRef = EC6046CF1CDC2A25006214DD /* UITextField+ATUtitlity.m */; };
-		EC71E6721C741EA000CF5FC8 /* LoggerClient.m in Sources */ = {isa = PBXBuildFile; fileRef = EC71E6701C741EA000CF5FC8 /* LoggerClient.m */; };
+		EC6046D41CDC3440006214DD /* LumberjackManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EC6046D31CDC3440006214DD /* LumberjackManager.m */; };
+		EC6047271CDC3474006214DD /* Aspects.m in Sources */ = {isa = PBXBuildFile; fileRef = EC6046D71CDC3474006214DD /* Aspects.m */; };
+		EC6047281CDC3474006214DD /* CAAnimation+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = EC6046DA1CDC3474006214DD /* CAAnimation+Blocks.m */; };
+		EC60472D1CDC3474006214DD /* CLIColor.m in Sources */ = {isa = PBXBuildFile; fileRef = EC6046E91CDC3474006214DD /* CLIColor.m */; };
+		EC60472E1CDC3474006214DD /* CocoaLumberjack.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6046EB1CDC3474006214DD /* CocoaLumberjack.swift */; };
+		EC60472F1CDC3474006214DD /* MiniStationLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = EC6046EE1CDC3474006214DD /* MiniStationLogFormatter.m */; };
+		EC6047301CDC3474006214DD /* DDAbstractDatabaseLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = EC6046F01CDC3474006214DD /* DDAbstractDatabaseLogger.m */; };
+		EC6047311CDC3474006214DD /* DDASLLogCapture.m in Sources */ = {isa = PBXBuildFile; fileRef = EC6046F21CDC3474006214DD /* DDASLLogCapture.m */; };
+		EC6047321CDC3474006214DD /* DDASLLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = EC6046F41CDC3474006214DD /* DDASLLogger.m */; };
+		EC6047331CDC3474006214DD /* DDFileLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = EC6046F71CDC3474006214DD /* DDFileLogger.m */; };
+		EC6047341CDC3474006214DD /* DDLog.m in Sources */ = {isa = PBXBuildFile; fileRef = EC6046FB1CDC3474006214DD /* DDLog.m */; };
+		EC6047351CDC3474006214DD /* DDTTYLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = EC6046FE1CDC3474006214DD /* DDTTYLogger.m */; };
+		EC6047361CDC3474006214DD /* DDContextFilterLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = EC6047011CDC3474006214DD /* DDContextFilterLogFormatter.m */; };
+		EC6047371CDC3474006214DD /* DDDispatchQueueLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = EC6047031CDC3474006214DD /* DDDispatchQueueLogFormatter.m */; };
+		EC6047381CDC3474006214DD /* DDMultiFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = EC6047051CDC3474006214DD /* DDMultiFormatter.m */; };
+		EC6047391CDC3474006214DD /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = EC6047081CDC3474006214DD /* MASCompositeConstraint.m */; };
+		EC60473A1CDC3474006214DD /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = EC60470B1CDC3474006214DD /* MASConstraint.m */; };
+		EC60473B1CDC3474006214DD /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = EC60470D1CDC3474006214DD /* MASConstraintMaker.m */; };
+		EC60473C1CDC3474006214DD /* MASLayoutConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = EC60470F1CDC3474006214DD /* MASLayoutConstraint.m */; };
+		EC60473D1CDC3474006214DD /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = EC6047131CDC3474006214DD /* MASViewAttribute.m */; };
+		EC60473E1CDC3474006214DD /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = EC6047151CDC3474006214DD /* MASViewConstraint.m */; };
+		EC60473F1CDC3474006214DD /* NSArray+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = EC6047171CDC3474006214DD /* NSArray+MASAdditions.m */; };
+		EC6047401CDC3474006214DD /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = EC60471A1CDC3474006214DD /* NSLayoutConstraint+MASDebugAdditions.m */; };
+		EC6047411CDC3474006214DD /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = EC60471C1CDC3474006214DD /* View+MASAdditions.m */; };
+		EC6047421CDC3474006214DD /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = EC60471F1CDC3474006214DD /* ViewController+MASAdditions.m */; };
+		EC6047431CDC3474006214DD /* LoggerClient.m in Sources */ = {isa = PBXBuildFile; fileRef = EC6047221CDC3474006214DD /* LoggerClient.m */; };
+		EC6047441CDC3474006214DD /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = EC6047261CDC3474006214DD /* Reachability.m */; };
+		EC6047481CDC37BD006214DD /* LumberjackLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = EC6047471CDC37BD006214DD /* LumberjackLogFormatter.m */; };
 		EC71E6761C74205900CF5FC8 /* EACoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = EC71E6751C74205900CF5FC8 /* EACoordinator.m */; };
 		ECE9C2081B462C2E009871AD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ECE9C2071B462C2E009871AD /* main.m */; };
 		ECE9C20B1B462C2E009871AD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ECE9C20A1B462C2E009871AD /* AppDelegate.m */; };
@@ -79,9 +106,73 @@
 		EC6046CC1CDC2989006214DD /* UIScreen+ATUtitlity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScreen+ATUtitlity.m"; sourceTree = "<group>"; };
 		EC6046CE1CDC2A25006214DD /* UITextField+ATUtitlity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+ATUtitlity.h"; sourceTree = "<group>"; };
 		EC6046CF1CDC2A25006214DD /* UITextField+ATUtitlity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+ATUtitlity.m"; sourceTree = "<group>"; };
-		EC71E66F1C741EA000CF5FC8 /* LoggerClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoggerClient.h; sourceTree = "<group>"; };
-		EC71E6701C741EA000CF5FC8 /* LoggerClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoggerClient.m; sourceTree = "<group>"; };
-		EC71E6711C741EA000CF5FC8 /* LoggerCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoggerCommon.h; sourceTree = "<group>"; };
+		EC6046D21CDC3440006214DD /* LumberjackManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LumberjackManager.h; sourceTree = "<group>"; };
+		EC6046D31CDC3440006214DD /* LumberjackManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LumberjackManager.m; sourceTree = "<group>"; };
+		EC6046D61CDC3474006214DD /* Aspects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Aspects.h; sourceTree = "<group>"; };
+		EC6046D71CDC3474006214DD /* Aspects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Aspects.m; sourceTree = "<group>"; };
+		EC6046D91CDC3474006214DD /* CAAnimation+Blocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CAAnimation+Blocks.h"; sourceTree = "<group>"; };
+		EC6046DA1CDC3474006214DD /* CAAnimation+Blocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CAAnimation+Blocks.m"; sourceTree = "<group>"; };
+		EC6046E81CDC3474006214DD /* CLIColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLIColor.h; sourceTree = "<group>"; };
+		EC6046E91CDC3474006214DD /* CLIColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLIColor.m; sourceTree = "<group>"; };
+		EC6046EA1CDC3474006214DD /* CocoaLumberjack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CocoaLumberjack.h; sourceTree = "<group>"; };
+		EC6046EB1CDC3474006214DD /* CocoaLumberjack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CocoaLumberjack.swift; sourceTree = "<group>"; };
+		EC6046ED1CDC3474006214DD /* MiniStationLogFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MiniStationLogFormatter.h; sourceTree = "<group>"; };
+		EC6046EE1CDC3474006214DD /* MiniStationLogFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MiniStationLogFormatter.m; sourceTree = "<group>"; };
+		EC6046EF1CDC3474006214DD /* DDAbstractDatabaseLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDAbstractDatabaseLogger.h; sourceTree = "<group>"; };
+		EC6046F01CDC3474006214DD /* DDAbstractDatabaseLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDAbstractDatabaseLogger.m; sourceTree = "<group>"; };
+		EC6046F11CDC3474006214DD /* DDASLLogCapture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDASLLogCapture.h; sourceTree = "<group>"; };
+		EC6046F21CDC3474006214DD /* DDASLLogCapture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDASLLogCapture.m; sourceTree = "<group>"; };
+		EC6046F31CDC3474006214DD /* DDASLLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDASLLogger.h; sourceTree = "<group>"; };
+		EC6046F41CDC3474006214DD /* DDASLLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDASLLogger.m; sourceTree = "<group>"; };
+		EC6046F51CDC3474006214DD /* DDAssertMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDAssertMacros.h; sourceTree = "<group>"; };
+		EC6046F61CDC3474006214DD /* DDFileLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDFileLogger.h; sourceTree = "<group>"; };
+		EC6046F71CDC3474006214DD /* DDFileLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDFileLogger.m; sourceTree = "<group>"; };
+		EC6046F81CDC3474006214DD /* DDLegacyMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDLegacyMacros.h; sourceTree = "<group>"; };
+		EC6046F91CDC3474006214DD /* DDLog+LOGV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DDLog+LOGV.h"; sourceTree = "<group>"; };
+		EC6046FA1CDC3474006214DD /* DDLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDLog.h; sourceTree = "<group>"; };
+		EC6046FB1CDC3474006214DD /* DDLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDLog.m; sourceTree = "<group>"; };
+		EC6046FC1CDC3474006214DD /* DDLogMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDLogMacros.h; sourceTree = "<group>"; };
+		EC6046FD1CDC3474006214DD /* DDTTYLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDTTYLogger.h; sourceTree = "<group>"; };
+		EC6046FE1CDC3474006214DD /* DDTTYLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDTTYLogger.m; sourceTree = "<group>"; };
+		EC6047001CDC3474006214DD /* DDContextFilterLogFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDContextFilterLogFormatter.h; sourceTree = "<group>"; };
+		EC6047011CDC3474006214DD /* DDContextFilterLogFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDContextFilterLogFormatter.m; sourceTree = "<group>"; };
+		EC6047021CDC3474006214DD /* DDDispatchQueueLogFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDDispatchQueueLogFormatter.h; sourceTree = "<group>"; };
+		EC6047031CDC3474006214DD /* DDDispatchQueueLogFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDDispatchQueueLogFormatter.m; sourceTree = "<group>"; };
+		EC6047041CDC3474006214DD /* DDMultiFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDMultiFormatter.h; sourceTree = "<group>"; };
+		EC6047051CDC3474006214DD /* DDMultiFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDMultiFormatter.m; sourceTree = "<group>"; };
+		EC6047071CDC3474006214DD /* MASCompositeConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASCompositeConstraint.h; sourceTree = "<group>"; };
+		EC6047081CDC3474006214DD /* MASCompositeConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASCompositeConstraint.m; sourceTree = "<group>"; };
+		EC6047091CDC3474006214DD /* MASConstraint+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MASConstraint+Private.h"; sourceTree = "<group>"; };
+		EC60470A1CDC3474006214DD /* MASConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASConstraint.h; sourceTree = "<group>"; };
+		EC60470B1CDC3474006214DD /* MASConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASConstraint.m; sourceTree = "<group>"; };
+		EC60470C1CDC3474006214DD /* MASConstraintMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASConstraintMaker.h; sourceTree = "<group>"; };
+		EC60470D1CDC3474006214DD /* MASConstraintMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASConstraintMaker.m; sourceTree = "<group>"; };
+		EC60470E1CDC3474006214DD /* MASLayoutConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASLayoutConstraint.h; sourceTree = "<group>"; };
+		EC60470F1CDC3474006214DD /* MASLayoutConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASLayoutConstraint.m; sourceTree = "<group>"; };
+		EC6047101CDC3474006214DD /* Masonry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Masonry.h; sourceTree = "<group>"; };
+		EC6047111CDC3474006214DD /* MASUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASUtilities.h; sourceTree = "<group>"; };
+		EC6047121CDC3474006214DD /* MASViewAttribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASViewAttribute.h; sourceTree = "<group>"; };
+		EC6047131CDC3474006214DD /* MASViewAttribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewAttribute.m; sourceTree = "<group>"; };
+		EC6047141CDC3474006214DD /* MASViewConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASViewConstraint.h; sourceTree = "<group>"; };
+		EC6047151CDC3474006214DD /* MASViewConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewConstraint.m; sourceTree = "<group>"; };
+		EC6047161CDC3474006214DD /* NSArray+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MASAdditions.h"; sourceTree = "<group>"; };
+		EC6047171CDC3474006214DD /* NSArray+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+MASAdditions.m"; sourceTree = "<group>"; };
+		EC6047181CDC3474006214DD /* NSArray+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		EC6047191CDC3474006214DD /* NSLayoutConstraint+MASDebugAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSLayoutConstraint+MASDebugAdditions.h"; sourceTree = "<group>"; };
+		EC60471A1CDC3474006214DD /* NSLayoutConstraint+MASDebugAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutConstraint+MASDebugAdditions.m"; sourceTree = "<group>"; };
+		EC60471B1CDC3474006214DD /* View+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASAdditions.h"; sourceTree = "<group>"; };
+		EC60471C1CDC3474006214DD /* View+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "View+MASAdditions.m"; sourceTree = "<group>"; };
+		EC60471D1CDC3474006214DD /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		EC60471E1CDC3474006214DD /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ViewController+MASAdditions.h"; sourceTree = "<group>"; };
+		EC60471F1CDC3474006214DD /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ViewController+MASAdditions.m"; sourceTree = "<group>"; };
+		EC6047211CDC3474006214DD /* LoggerClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoggerClient.h; sourceTree = "<group>"; };
+		EC6047221CDC3474006214DD /* LoggerClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoggerClient.m; sourceTree = "<group>"; };
+		EC6047231CDC3474006214DD /* LoggerCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoggerCommon.h; sourceTree = "<group>"; };
+		EC6047251CDC3474006214DD /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		EC6047261CDC3474006214DD /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		EC6047451CDC3558006214DD /* Swift-Briging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Swift-Briging-Header.h"; sourceTree = "<group>"; };
+		EC6047461CDC37BD006214DD /* LumberjackLogFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LumberjackLogFormatter.h; sourceTree = "<group>"; };
+		EC6047471CDC37BD006214DD /* LumberjackLogFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LumberjackLogFormatter.m; sourceTree = "<group>"; };
 		EC71E6741C74205900CF5FC8 /* EACoordinator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EACoordinator.h; sourceTree = "<group>"; };
 		EC71E6751C74205900CF5FC8 /* EACoordinator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EACoordinator.m; sourceTree = "<group>"; };
 		ECE9C2021B462C2E009871AD /* ATUtility.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ATUtility.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -128,6 +219,145 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		EC6046D11CDC3430006214DD /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				EC6046D21CDC3440006214DD /* LumberjackManager.h */,
+				EC6046D31CDC3440006214DD /* LumberjackManager.m */,
+				EC6047461CDC37BD006214DD /* LumberjackLogFormatter.h */,
+				EC6047471CDC37BD006214DD /* LumberjackLogFormatter.m */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		EC6046D51CDC3474006214DD /* Aspects */ = {
+			isa = PBXGroup;
+			children = (
+				EC6046D61CDC3474006214DD /* Aspects.h */,
+				EC6046D71CDC3474006214DD /* Aspects.m */,
+			);
+			path = Aspects;
+			sourceTree = "<group>";
+		};
+		EC6046D81CDC3474006214DD /* CAAnimation+Blocks */ = {
+			isa = PBXGroup;
+			children = (
+				EC6046D91CDC3474006214DD /* CAAnimation+Blocks.h */,
+				EC6046DA1CDC3474006214DD /* CAAnimation+Blocks.m */,
+			);
+			path = "CAAnimation+Blocks";
+			sourceTree = "<group>";
+		};
+		EC6046E61CDC3474006214DD /* Lumberjack */ = {
+			isa = PBXGroup;
+			children = (
+				EC6046E71CDC3474006214DD /* CLI */,
+				EC6046EA1CDC3474006214DD /* CocoaLumberjack.h */,
+				EC6046EB1CDC3474006214DD /* CocoaLumberjack.swift */,
+				EC6046EC1CDC3474006214DD /* Customer */,
+				EC6046EF1CDC3474006214DD /* DDAbstractDatabaseLogger.h */,
+				EC6046F01CDC3474006214DD /* DDAbstractDatabaseLogger.m */,
+				EC6046F11CDC3474006214DD /* DDASLLogCapture.h */,
+				EC6046F21CDC3474006214DD /* DDASLLogCapture.m */,
+				EC6046F31CDC3474006214DD /* DDASLLogger.h */,
+				EC6046F41CDC3474006214DD /* DDASLLogger.m */,
+				EC6046F51CDC3474006214DD /* DDAssertMacros.h */,
+				EC6046F61CDC3474006214DD /* DDFileLogger.h */,
+				EC6046F71CDC3474006214DD /* DDFileLogger.m */,
+				EC6046F81CDC3474006214DD /* DDLegacyMacros.h */,
+				EC6046F91CDC3474006214DD /* DDLog+LOGV.h */,
+				EC6046FA1CDC3474006214DD /* DDLog.h */,
+				EC6046FB1CDC3474006214DD /* DDLog.m */,
+				EC6046FC1CDC3474006214DD /* DDLogMacros.h */,
+				EC6046FD1CDC3474006214DD /* DDTTYLogger.h */,
+				EC6046FE1CDC3474006214DD /* DDTTYLogger.m */,
+				EC6046FF1CDC3474006214DD /* Extensions */,
+			);
+			path = Lumberjack;
+			sourceTree = "<group>";
+		};
+		EC6046E71CDC3474006214DD /* CLI */ = {
+			isa = PBXGroup;
+			children = (
+				EC6046E81CDC3474006214DD /* CLIColor.h */,
+				EC6046E91CDC3474006214DD /* CLIColor.m */,
+			);
+			path = CLI;
+			sourceTree = "<group>";
+		};
+		EC6046EC1CDC3474006214DD /* Customer */ = {
+			isa = PBXGroup;
+			children = (
+				EC6046ED1CDC3474006214DD /* MiniStationLogFormatter.h */,
+				EC6046EE1CDC3474006214DD /* MiniStationLogFormatter.m */,
+			);
+			path = Customer;
+			sourceTree = "<group>";
+		};
+		EC6046FF1CDC3474006214DD /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				EC6047001CDC3474006214DD /* DDContextFilterLogFormatter.h */,
+				EC6047011CDC3474006214DD /* DDContextFilterLogFormatter.m */,
+				EC6047021CDC3474006214DD /* DDDispatchQueueLogFormatter.h */,
+				EC6047031CDC3474006214DD /* DDDispatchQueueLogFormatter.m */,
+				EC6047041CDC3474006214DD /* DDMultiFormatter.h */,
+				EC6047051CDC3474006214DD /* DDMultiFormatter.m */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		EC6047061CDC3474006214DD /* Masonry */ = {
+			isa = PBXGroup;
+			children = (
+				EC6047071CDC3474006214DD /* MASCompositeConstraint.h */,
+				EC6047081CDC3474006214DD /* MASCompositeConstraint.m */,
+				EC6047091CDC3474006214DD /* MASConstraint+Private.h */,
+				EC60470A1CDC3474006214DD /* MASConstraint.h */,
+				EC60470B1CDC3474006214DD /* MASConstraint.m */,
+				EC60470C1CDC3474006214DD /* MASConstraintMaker.h */,
+				EC60470D1CDC3474006214DD /* MASConstraintMaker.m */,
+				EC60470E1CDC3474006214DD /* MASLayoutConstraint.h */,
+				EC60470F1CDC3474006214DD /* MASLayoutConstraint.m */,
+				EC6047101CDC3474006214DD /* Masonry.h */,
+				EC6047111CDC3474006214DD /* MASUtilities.h */,
+				EC6047121CDC3474006214DD /* MASViewAttribute.h */,
+				EC6047131CDC3474006214DD /* MASViewAttribute.m */,
+				EC6047141CDC3474006214DD /* MASViewConstraint.h */,
+				EC6047151CDC3474006214DD /* MASViewConstraint.m */,
+				EC6047161CDC3474006214DD /* NSArray+MASAdditions.h */,
+				EC6047171CDC3474006214DD /* NSArray+MASAdditions.m */,
+				EC6047181CDC3474006214DD /* NSArray+MASShorthandAdditions.h */,
+				EC6047191CDC3474006214DD /* NSLayoutConstraint+MASDebugAdditions.h */,
+				EC60471A1CDC3474006214DD /* NSLayoutConstraint+MASDebugAdditions.m */,
+				EC60471B1CDC3474006214DD /* View+MASAdditions.h */,
+				EC60471C1CDC3474006214DD /* View+MASAdditions.m */,
+				EC60471D1CDC3474006214DD /* View+MASShorthandAdditions.h */,
+				EC60471E1CDC3474006214DD /* ViewController+MASAdditions.h */,
+				EC60471F1CDC3474006214DD /* ViewController+MASAdditions.m */,
+			);
+			path = Masonry;
+			sourceTree = "<group>";
+		};
+		EC6047201CDC3474006214DD /* NSLogger */ = {
+			isa = PBXGroup;
+			children = (
+				EC6047211CDC3474006214DD /* LoggerClient.h */,
+				EC6047221CDC3474006214DD /* LoggerClient.m */,
+				EC6047231CDC3474006214DD /* LoggerCommon.h */,
+			);
+			path = NSLogger;
+			sourceTree = "<group>";
+		};
+		EC6047241CDC3474006214DD /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				EC6047251CDC3474006214DD /* Reachability.h */,
+				EC6047261CDC3474006214DD /* Reachability.m */,
+			);
+			path = Reachability;
+			sourceTree = "<group>";
+		};
 		EC71E6691C741DEA00CF5FC8 /* ExternalAccessory */ = {
 			isa = PBXGroup;
 			children = (
@@ -140,24 +370,20 @@
 		EC71E66D1C741EA000CF5FC8 /* ThirdpartyLibrary */ = {
 			isa = PBXGroup;
 			children = (
-				EC71E66E1C741EA000CF5FC8 /* NSLogger */,
+				EC6046D51CDC3474006214DD /* Aspects */,
+				EC6046D81CDC3474006214DD /* CAAnimation+Blocks */,
+				EC6046E61CDC3474006214DD /* Lumberjack */,
+				EC6047061CDC3474006214DD /* Masonry */,
+				EC6047201CDC3474006214DD /* NSLogger */,
+				EC6047241CDC3474006214DD /* Reachability */,
 			);
 			path = ThirdpartyLibrary;
-			sourceTree = "<group>";
-		};
-		EC71E66E1C741EA000CF5FC8 /* NSLogger */ = {
-			isa = PBXGroup;
-			children = (
-				EC71E66F1C741EA000CF5FC8 /* LoggerClient.h */,
-				EC71E6701C741EA000CF5FC8 /* LoggerClient.m */,
-				EC71E6711C741EA000CF5FC8 /* LoggerCommon.h */,
-			);
-			path = NSLogger;
 			sourceTree = "<group>";
 		};
 		ECE9C1F91B462C2E009871AD = {
 			isa = PBXGroup;
 			children = (
+				EC6047451CDC3558006214DD /* Swift-Briging-Header.h */,
 				EC597F0D1C9B95C40089B810 /* H264DecoderForiOS.xcodeproj */,
 				ECE9C2041B462C2E009871AD /* ATUtility */,
 				ECE9C21E1B462C2E009871AD /* ATUtilityTests */,
@@ -220,6 +446,7 @@
 		ECE9C22B1B462C56009871AD /* ATUtility */ = {
 			isa = PBXGroup;
 			children = (
+				EC6046D11CDC3430006214DD /* Manager */,
 				EC71E6691C741DEA00CF5FC8 /* ExternalAccessory */,
 				ECE9C22C1B462C56009871AD /* Foundation */,
 				ECE9C22D1B462C56009871AD /* UIKit */,
@@ -393,20 +620,47 @@
 				6ABBD5ED1B4908BB006750FF /* NSData+ATUtility.m in Sources */,
 				EC54C7C01C4E24E000684811 /* UIWindow+ATUtility.m in Sources */,
 				EC71E6761C74205900CF5FC8 /* EACoordinator.m in Sources */,
+				EC60472D1CDC3474006214DD /* CLIColor.m in Sources */,
+				EC6047411CDC3474006214DD /* View+MASAdditions.m in Sources */,
 				6ABBD5F31B49117F006750FF /* UIView+LTKAdditions.m in Sources */,
+				EC6047321CDC3474006214DD /* DDASLLogger.m in Sources */,
 				6ABBD5F61B491235006750FF /* NSObject+ATUtility.m in Sources */,
+				EC6047371CDC3474006214DD /* DDDispatchQueueLogFormatter.m in Sources */,
+				EC6047301CDC3474006214DD /* DDAbstractDatabaseLogger.m in Sources */,
+				EC60473C1CDC3474006214DD /* MASLayoutConstraint.m in Sources */,
+				EC6047381CDC3474006214DD /* DDMultiFormatter.m in Sources */,
+				EC60472E1CDC3474006214DD /* CocoaLumberjack.swift in Sources */,
+				EC60473F1CDC3474006214DD /* NSArray+MASAdditions.m in Sources */,
 				6ABBD5F21B49117F006750FF /* UIView+ATUTility.m in Sources */,
+				EC6047281CDC3474006214DD /* CAAnimation+Blocks.m in Sources */,
 				EC6046D01CDC2A25006214DD /* UITextField+ATUtitlity.m in Sources */,
 				EC6046C91CDC27B8006214DD /* UIImage+Blur.m in Sources */,
-				EC71E6721C741EA000CF5FC8 /* LoggerClient.m in Sources */,
+				EC6047331CDC3474006214DD /* DDFileLogger.m in Sources */,
 				ECE9C20B1B462C2E009871AD /* AppDelegate.m in Sources */,
+				EC6047431CDC3474006214DD /* LoggerClient.m in Sources */,
+				EC60473B1CDC3474006214DD /* MASConstraintMaker.m in Sources */,
 				6ABBD5E71B48C031006750FF /* NSDate+ATUtility.m in Sources */,
+				EC60472F1CDC3474006214DD /* MiniStationLogFormatter.m in Sources */,
+				EC6047351CDC3474006214DD /* DDTTYLogger.m in Sources */,
+				EC60473E1CDC3474006214DD /* MASViewConstraint.m in Sources */,
+				EC6047391CDC3474006214DD /* MASCompositeConstraint.m in Sources */,
+				EC6047481CDC37BD006214DD /* LumberjackLogFormatter.m in Sources */,
 				6A5832551B7EE7D9007967F2 /* DismissKeyboardWindow.m in Sources */,
+				EC60473D1CDC3474006214DD /* MASViewAttribute.m in Sources */,
 				ECE9C2081B462C2E009871AD /* main.m in Sources */,
 				EC6046CD1CDC2989006214DD /* UIScreen+ATUtitlity.m in Sources */,
+				EC6047271CDC3474006214DD /* Aspects.m in Sources */,
+				EC6047311CDC3474006214DD /* DDASLLogCapture.m in Sources */,
+				EC6047341CDC3474006214DD /* DDLog.m in Sources */,
 				ECE9C2301B462C7D009871AD /* NSString+ATUtility.m in Sources */,
+				EC6047401CDC3474006214DD /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
+				EC6047361CDC3474006214DD /* DDContextFilterLogFormatter.m in Sources */,
+				EC6046D41CDC3440006214DD /* LumberjackManager.m in Sources */,
 				EC2D641B1BFEAF0B00D00EBF /* UIImage+ATUtility.m in Sources */,
+				EC6047421CDC3474006214DD /* ViewController+MASAdditions.m in Sources */,
+				EC6047441CDC3474006214DD /* Reachability.m in Sources */,
 				6ABBD5E31B48BF86006750FF /* NSDate+TimeAgo.m in Sources */,
+				EC60473A1CDC3474006214DD /* MASConstraint.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -489,6 +743,7 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "Swift-Briging-Header.h";
 			};
 			name = Debug;
 		};
@@ -525,6 +780,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "Swift-Briging-Header.h";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
