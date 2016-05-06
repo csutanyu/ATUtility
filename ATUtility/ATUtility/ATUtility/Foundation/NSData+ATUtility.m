@@ -8,6 +8,7 @@
 
 #import "NSData+ATUtility.h"
 #import <CommonCrypto/CommonCryptor.h>
+#import "NSObject+ATUtility.h"
 
 static char encodingTable[64] = {
     'A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P',
@@ -17,6 +18,8 @@ static char encodingTable[64] = {
 };
 
 @implementation NSData (ATUtility)
+
+#pragma mark - Crypto
 
 - (NSData *)AES256EncryptWithKey:(NSString *)key {
     // 'key' should be 32 bytes for AES256, will be null-padded otherwise
@@ -239,6 +242,32 @@ static char encodingTable[64] = {
 - (BOOL)hasSuffixBytes:(const void *)suffix length:(NSUInteger)length {
     if( ! suffix || ! length || self.length < length ) return NO;
     return ( memcmp( ((const char *)[self bytes] + (self.length - length)), suffix, length ) == 0 );
+}
+
+- (NSString *)writeToFileNamed:(NSString *)name extension:(NSString *)extension {
+    return [self writeToFileDirectory:nil name:name extension:extension];
+}
+
+- (NSString *)writeToFileDirectory:(NSString *)directory name:(NSString *)name extension:(NSString *)extension {
+    NSString *filePath = [self documentsPath];
+    if ([name isKindOfClass:[NSString class]] && [extension isKindOfClass:[NSString class]] && name.length > 0 && extension.length > 0) {
+        if ([directory isKindOfClass:[NSString class]] && directory.length > 0 ) {
+            filePath = [filePath stringByAppendingPathComponent:directory];
+            NSFileManager *fileManager = [NSFileManager defaultManager];
+            if (![fileManager fileExistsAtPath:filePath]) {
+                NSError *error = nil;
+                [fileManager createDirectoryAtPath:filePath withIntermediateDirectories:YES attributes:nil error:&error];
+                if (error) {
+                    NSLog(@"%@", error.localizedDescription);
+                }
+            }
+        }
+        filePath = [filePath stringByAppendingPathComponent:name];
+        filePath = [filePath stringByAppendingPathExtension:extension];
+        [self writeToFile:filePath atomically:YES];
+    }
+    
+    return filePath;
 }
 
 @end

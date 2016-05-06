@@ -11,6 +11,8 @@
 
 @interface NSData (ATUtility)
 
+#pragma mark - Crypto
+
 - (NSData *)AES256EncryptWithKey:(NSString *)key;
 - (NSData *)AES256DecryptWithKey:(NSString *)key;
 
@@ -20,7 +22,14 @@
 - (NSString *)base64Encoding;
 - (NSString *)base64EncodingWithLineLength:(NSUInteger)lineLength;
 
+#pragma mark - Prefix and Suffix
+
 - (BOOL)hasPrefixBytes:(const void *)prefix length:(NSUInteger)length;
 - (BOOL)hasSuffixBytes:(const void *)suffix length:(NSUInteger)length;
+
+#pragma mark - Save
+
+- (NSString *)writeToFileNamed:(NSString *)name extension:(NSString *)extension;
+- (NSString *)writeToFileDirectory:(NSString *)directory name:(NSString *)name extension:(NSString *)extension;
 
 @end
