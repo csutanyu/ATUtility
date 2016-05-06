@@ -18,4 +18,11 @@
 + (NSString*)hardwareString;
 + (NSString*)hardwareDescription;
 
++ (NSString *)currentModel;
++ (BOOL)runningOnSimulator;
+
+- (NSString *)UUIDString;
+- (NSDictionary *)networkInfo;
+- (NSString *)SSID;
+
 @end

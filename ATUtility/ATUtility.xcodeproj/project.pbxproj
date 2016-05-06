@@ -18,6 +18,9 @@
 		EC2D64181BFEAE1800D00EBF /* UIDevice+ATUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = EC2D64171BFEAE1800D00EBF /* UIDevice+ATUtility.m */; };
 		EC2D641B1BFEAF0B00D00EBF /* UIImage+ATUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = EC2D641A1BFEAF0B00D00EBF /* UIImage+ATUtility.m */; };
 		EC54C7C01C4E24E000684811 /* UIWindow+ATUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = EC54C7BF1C4E24E000684811 /* UIWindow+ATUtility.m */; };
+		EC6046C91CDC27B8006214DD /* UIImage+Blur.m in Sources */ = {isa = PBXBuildFile; fileRef = EC6046C81CDC27B8006214DD /* UIImage+Blur.m */; };
+		EC6046CD1CDC2989006214DD /* UIScreen+ATUtitlity.m in Sources */ = {isa = PBXBuildFile; fileRef = EC6046CC1CDC2989006214DD /* UIScreen+ATUtitlity.m */; };
+		EC6046D01CDC2A25006214DD /* UITextField+ATUtitlity.m in Sources */ = {isa = PBXBuildFile; fileRef = EC6046CF1CDC2A25006214DD /* UITextField+ATUtitlity.m */; };
 		EC71E6721C741EA000CF5FC8 /* LoggerClient.m in Sources */ = {isa = PBXBuildFile; fileRef = EC71E6701C741EA000CF5FC8 /* LoggerClient.m */; };
 		EC71E6761C74205900CF5FC8 /* EACoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = EC71E6751C74205900CF5FC8 /* EACoordinator.m */; };
 		ECE9C2081B462C2E009871AD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ECE9C2071B462C2E009871AD /* main.m */; };
@@ -70,6 +73,12 @@
 		EC54C7BE1C4E24E000684811 /* UIWindow+ATUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWindow+ATUtility.h"; sourceTree = "<group>"; };
 		EC54C7BF1C4E24E000684811 /* UIWindow+ATUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWindow+ATUtility.m"; sourceTree = "<group>"; };
 		EC597F0D1C9B95C40089B810 /* H264DecoderForiOS.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = H264DecoderForiOS.xcodeproj; path = H264Decoder/H264DecoderForiOS/H264DecoderForiOS.xcodeproj; sourceTree = "<group>"; };
+		EC6046C71CDC27B8006214DD /* UIImage+Blur.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Blur.h"; sourceTree = "<group>"; };
+		EC6046C81CDC27B8006214DD /* UIImage+Blur.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Blur.m"; sourceTree = "<group>"; };
+		EC6046CB1CDC2989006214DD /* UIScreen+ATUtitlity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScreen+ATUtitlity.h"; sourceTree = "<group>"; };
+		EC6046CC1CDC2989006214DD /* UIScreen+ATUtitlity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScreen+ATUtitlity.m"; sourceTree = "<group>"; };
+		EC6046CE1CDC2A25006214DD /* UITextField+ATUtitlity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+ATUtitlity.h"; sourceTree = "<group>"; };
+		EC6046CF1CDC2A25006214DD /* UITextField+ATUtitlity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+ATUtitlity.m"; sourceTree = "<group>"; };
 		EC71E66F1C741EA000CF5FC8 /* LoggerClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoggerClient.h; sourceTree = "<group>"; };
 		EC71E6701C741EA000CF5FC8 /* LoggerClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoggerClient.m; sourceTree = "<group>"; };
 		EC71E6711C741EA000CF5FC8 /* LoggerCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoggerCommon.h; sourceTree = "<group>"; };
@@ -243,6 +252,8 @@
 				6A5832531B7EE7D9007967F2 /* DismissKeyboardWindow.h */,
 				6A5832541B7EE7D9007967F2 /* DismissKeyboardWindow.m */,
 				6ABBD5EE1B49117F006750FF /* UIView+ATUTility.h */,
+				EC6046C71CDC27B8006214DD /* UIImage+Blur.h */,
+				EC6046C81CDC27B8006214DD /* UIImage+Blur.m */,
 				6ABBD5EF1B49117F006750FF /* UIView+ATUTility.m */,
 				6ABBD5F01B49117F006750FF /* UIView+LTKAdditions.h */,
 				6ABBD5F11B49117F006750FF /* UIView+LTKAdditions.m */,
@@ -250,6 +261,10 @@
 				EC2D64171BFEAE1800D00EBF /* UIDevice+ATUtility.m */,
 				EC2D64191BFEAF0B00D00EBF /* UIImage+ATUtility.h */,
 				EC2D641A1BFEAF0B00D00EBF /* UIImage+ATUtility.m */,
+				EC6046CB1CDC2989006214DD /* UIScreen+ATUtitlity.h */,
+				EC6046CC1CDC2989006214DD /* UIScreen+ATUtitlity.m */,
+				EC6046CE1CDC2A25006214DD /* UITextField+ATUtitlity.h */,
+				EC6046CF1CDC2A25006214DD /* UITextField+ATUtitlity.m */,
 				EC54C7BE1C4E24E000684811 /* UIWindow+ATUtility.h */,
 				EC54C7BF1C4E24E000684811 /* UIWindow+ATUtility.m */,
 			);
@@ -381,11 +396,14 @@
 				6ABBD5F31B49117F006750FF /* UIView+LTKAdditions.m in Sources */,
 				6ABBD5F61B491235006750FF /* NSObject+ATUtility.m in Sources */,
 				6ABBD5F21B49117F006750FF /* UIView+ATUTility.m in Sources */,
+				EC6046D01CDC2A25006214DD /* UITextField+ATUtitlity.m in Sources */,
+				EC6046C91CDC27B8006214DD /* UIImage+Blur.m in Sources */,
 				EC71E6721C741EA000CF5FC8 /* LoggerClient.m in Sources */,
 				ECE9C20B1B462C2E009871AD /* AppDelegate.m in Sources */,
 				6ABBD5E71B48C031006750FF /* NSDate+ATUtility.m in Sources */,
 				6A5832551B7EE7D9007967F2 /* DismissKeyboardWindow.m in Sources */,
 				ECE9C2081B462C2E009871AD /* main.m in Sources */,
+				EC6046CD1CDC2989006214DD /* UIScreen+ATUtitlity.m in Sources */,
 				ECE9C2301B462C7D009871AD /* NSString+ATUtility.m in Sources */,
 				EC2D641B1BFEAF0B00D00EBF /* UIImage+ATUtility.m in Sources */,
 				6ABBD5E31B48BF86006750FF /* NSDate+TimeAgo.m in Sources */,

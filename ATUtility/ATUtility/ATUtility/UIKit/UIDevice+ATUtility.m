@@ -7,7 +7,7 @@
 //
 
 #import "UIDevice+ATUtility.h"
-
+#import <SystemConfiguration/CaptiveNetwork.h>
 #include <sys/types.h>
 #include <sys/sysctl.h>
 #include <stdio.h>
@@ -363,6 +363,72 @@ static int   nextAddr = 0;
     
     //log message that your device is not present in the list
     return nil;
+}
+
++ (NSString *)currentModel {
+    NSString *result = nil;
+    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
+        result = @"IPHONE";
+    } else {
+        result = @"IPAD";
+    }
+    
+    return result;
+}
+
++ (BOOL)runningOnSimulator {
+    NSString *model = [[UIDevice currentDevice] model];
+    if ([model hasSuffix:@"Simulator"]) {
+        return YES;
+    } else {
+        return NO;
+    }
+}
+
+- (NSString *)UUIDString {
+    CFUUIDRef UUIDRef = CFUUIDCreate(kCFAllocatorDefault);
+    NSString *result = CFBridgingRelease(CFUUIDCreateString(kCFAllocatorDefault, UUIDRef));
+    CFRelease(UUIDRef);
+    return result;
+}
+
+- (NSDictionary *)networkInfo {
+    NSDictionary *result = nil;
+    CFArrayRef interfaces = CNCopySupportedInterfaces();
+    if (interfaces) {
+        CFIndex count = CFArrayGetCount(interfaces);
+        if (count > 0) {
+            CFDictionaryRef networkInfo = CNCopyCurrentNetworkInfo(CFArrayGetValueAtIndex(interfaces, 0));
+            //            ELog(@"%@", networkInfo);
+            if (networkInfo) {
+                result = (__bridge NSDictionary *)(networkInfo);
+                CFRelease(networkInfo);
+            }
+        }
+        CFRelease(interfaces);
+    }
+    return result;
+}
+
+- (NSString *)SSID {
+    NSString *result = [NSString string];
+    CFArrayRef interfaces = CNCopySupportedInterfaces();
+    if (interfaces) {
+        CFIndex count = CFArrayGetCount(interfaces);
+        if (count > 0) {
+            CFDictionaryRef networkInfo = CNCopyCurrentNetworkInfo(CFArrayGetValueAtIndex(interfaces, 0));
+            //            ELog(@"%@ VS %@", networkInfo, [self networkInfo]);
+            if (networkInfo) {
+                NSString *SSIDValue = CFDictionaryGetValue(networkInfo, kCNNetworkInfoKeySSID);
+                if (SSIDValue && SSIDValue.length > 0) {
+                    result = SSIDValue;
+                }
+                CFRelease(networkInfo);
+            }
+        }
+        CFRelease(interfaces);
+    }
+    return result;
 }
 
 @end

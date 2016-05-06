@@ -1,15 +1,15 @@
 //
-//  UIImage+ATUtility.m
+//  UIImage+Blur.m
 //  ATUtility
 //
-//  Created by arvin.tan on 15/11/20.
-//  Copyright © 2015年 arvin.tan. All rights reserved.
+//  Created by arvin.tan on 5/6/16.
+//  Copyright © 2016 arvin.tan. All rights reserved.
 //
 
-#import "UIImage+ATUtility.h"
+#import "UIImage+Blur.h"
 #import <Accelerate/Accelerate.h>
 
-@implementation UIImage (ATUtility)
+@implementation UIImage (Blur)
 
 - (UIImage *)imageWithBlur {
     return [self imageWithLightAlpha:0.1 radius:3 colorSaturationFactor:1.8];
@@ -139,7 +139,8 @@
     CGContextDrawImage(context, rect, theCGImage);
     CGImageRef scaledImage = CGBitmapContextCreateImage(context);
     UIImage *reultImage = [UIImage imageWithCGImage:scaledImage];
-    CFRelease(scaledImage);
+    CGImageRelease(scaledImage);
+    CGContextRelease(context);
     return reultImage;
 }
 
