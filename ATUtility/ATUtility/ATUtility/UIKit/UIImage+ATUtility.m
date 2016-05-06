@@ -139,7 +139,8 @@
     CGContextDrawImage(context, rect, theCGImage);
     CGImageRef scaledImage = CGBitmapContextCreateImage(context);
     UIImage *reultImage = [UIImage imageWithCGImage:scaledImage];
-    CFRelease(scaledImage);
+    CGImageRelease(scaledImage);
+    CGContextRelease(context);
     return reultImage;
 }
 
