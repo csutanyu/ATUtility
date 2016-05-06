@@ -90,6 +90,7 @@
 		ECE9C2211B462C2E009871AD /* ATUtilityTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATUtilityTests.m; sourceTree = "<group>"; };
 		ECE9C22E1B462C7D009871AD /* NSString+ATUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+ATUtility.h"; sourceTree = "<group>"; };
 		ECE9C22F1B462C7D009871AD /* NSString+ATUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+ATUtility.m"; sourceTree = "<group>"; };
+		ECFE546E1CC0E2AA00391D32 /* ATException.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATException.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -220,6 +221,7 @@
 		ECE9C22C1B462C56009871AD /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
+				ECFE546E1CC0E2AA00391D32 /* ATException.h */,
 				ECE9C22E1B462C7D009871AD /* NSString+ATUtility.h */,
 				6ABBD5F41B491235006750FF /* NSObject+ATUtility.h */,
 				6ABBD5F51B491235006750FF /* NSObject+ATUtility.m */,
