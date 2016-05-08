@@ -73,6 +73,11 @@
 		ECE9C2161B462C2E009871AD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = ECE9C2141B462C2E009871AD /* LaunchScreen.xib */; };
 		ECE9C2221B462C2E009871AD /* ATUtilityTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ECE9C2211B462C2E009871AD /* ATUtilityTests.m */; };
 		ECE9C2301B462C7D009871AD /* NSString+ATUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = ECE9C22F1B462C7D009871AD /* NSString+ATUtility.m */; };
+		ECEA52DC1CDEBAF500FBB9D4 /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = ECEA52DB1CDEBAF500FBB9D4 /* UIColor+Hex.m */; };
+		ECEA52E71CDEBB1900FBB9D4 /* RAReorderableLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECEA52DF1CDEBB1900FBB9D4 /* RAReorderableLayout.swift */; };
+		ECEA52E81CDEBB1900FBB9D4 /* RDVTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = ECEA52E21CDEBB1900FBB9D4 /* RDVTabBar.m */; };
+		ECEA52E91CDEBB1900FBB9D4 /* RDVTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECEA52E41CDEBB1900FBB9D4 /* RDVTabBarController.m */; };
+		ECEA52EA1CDEBB1900FBB9D4 /* RDVTabBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = ECEA52E61CDEBB1900FBB9D4 /* RDVTabBarItem.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -237,6 +242,15 @@
 		ECE9C2211B462C2E009871AD /* ATUtilityTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATUtilityTests.m; sourceTree = "<group>"; };
 		ECE9C22E1B462C7D009871AD /* NSString+ATUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+ATUtility.h"; sourceTree = "<group>"; };
 		ECE9C22F1B462C7D009871AD /* NSString+ATUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+ATUtility.m"; sourceTree = "<group>"; };
+		ECEA52DA1CDEBAF500FBB9D4 /* UIColor+Hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Hex.h"; sourceTree = "<group>"; };
+		ECEA52DB1CDEBAF500FBB9D4 /* UIColor+Hex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Hex.m"; sourceTree = "<group>"; };
+		ECEA52DF1CDEBB1900FBB9D4 /* RAReorderableLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RAReorderableLayout.swift; sourceTree = "<group>"; };
+		ECEA52E11CDEBB1900FBB9D4 /* RDVTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDVTabBar.h; sourceTree = "<group>"; };
+		ECEA52E21CDEBB1900FBB9D4 /* RDVTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDVTabBar.m; sourceTree = "<group>"; };
+		ECEA52E31CDEBB1900FBB9D4 /* RDVTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDVTabBarController.h; sourceTree = "<group>"; };
+		ECEA52E41CDEBB1900FBB9D4 /* RDVTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDVTabBarController.m; sourceTree = "<group>"; };
+		ECEA52E51CDEBB1900FBB9D4 /* RDVTabBarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDVTabBarItem.h; sourceTree = "<group>"; };
+		ECEA52E61CDEBB1900FBB9D4 /* RDVTabBarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDVTabBarItem.m; sourceTree = "<group>"; };
 		ECFE546E1CC0E2AA00391D32 /* ATException.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATException.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -603,6 +617,8 @@
 		ECE9C22D1B462C56009871AD /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				ECEA52DE1CDEBB1900FBB9D4 /* RAReorderableLayout */,
+				ECEA52E01CDEBB1900FBB9D4 /* RDVTabBarController */,
 				6A5832531B7EE7D9007967F2 /* DismissKeyboardWindow.h */,
 				6A5832541B7EE7D9007967F2 /* DismissKeyboardWindow.m */,
 				6ABBD5EE1B49117F006750FF /* UIView+ATUTility.h */,
@@ -611,6 +627,8 @@
 				6ABBD5EF1B49117F006750FF /* UIView+ATUTility.m */,
 				6ABBD5F01B49117F006750FF /* UIView+LTKAdditions.h */,
 				6ABBD5F11B49117F006750FF /* UIView+LTKAdditions.m */,
+				ECEA52DA1CDEBAF500FBB9D4 /* UIColor+Hex.h */,
+				ECEA52DB1CDEBAF500FBB9D4 /* UIColor+Hex.m */,
 				EC2D64161BFEAE1800D00EBF /* UIDevice+ATUtility.h */,
 				EC2D64171BFEAE1800D00EBF /* UIDevice+ATUtility.m */,
 				EC2D64191BFEAF0B00D00EBF /* UIImage+ATUtility.h */,
@@ -623,6 +641,27 @@
 				EC54C7BF1C4E24E000684811 /* UIWindow+ATUtility.m */,
 			);
 			path = UIKit;
+			sourceTree = "<group>";
+		};
+		ECEA52DE1CDEBB1900FBB9D4 /* RAReorderableLayout */ = {
+			isa = PBXGroup;
+			children = (
+				ECEA52DF1CDEBB1900FBB9D4 /* RAReorderableLayout.swift */,
+			);
+			path = RAReorderableLayout;
+			sourceTree = "<group>";
+		};
+		ECEA52E01CDEBB1900FBB9D4 /* RDVTabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				ECEA52E11CDEBB1900FBB9D4 /* RDVTabBar.h */,
+				ECEA52E21CDEBB1900FBB9D4 /* RDVTabBar.m */,
+				ECEA52E31CDEBB1900FBB9D4 /* RDVTabBarController.h */,
+				ECEA52E41CDEBB1900FBB9D4 /* RDVTabBarController.m */,
+				ECEA52E51CDEBB1900FBB9D4 /* RDVTabBarItem.h */,
+				ECEA52E61CDEBB1900FBB9D4 /* RDVTabBarItem.m */,
+			);
+			path = RDVTabBarController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -674,6 +713,7 @@
 				TargetAttributes = {
 					ECE9C2011B462C2E009871AD = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = X5TW3SPY8J;
 					};
 					ECE9C21A1B462C2E009871AD = {
 						CreatedOnToolsVersion = 6.3.1;
@@ -757,6 +797,7 @@
 				EC5943A91CDC6114003BC526 /* IQTitleBarButtonItem.m in Sources */,
 				6ABBD5F61B491235006750FF /* NSObject+ATUtility.m in Sources */,
 				EC6047371CDC3474006214DD /* DDDispatchQueueLogFormatter.m in Sources */,
+				ECEA52E71CDEBB1900FBB9D4 /* RAReorderableLayout.swift in Sources */,
 				EC5943A51CDC6114003BC526 /* IQKeyboardReturnKeyHandler.m in Sources */,
 				EC6047301CDC3474006214DD /* DDAbstractDatabaseLogger.m in Sources */,
 				EC60473C1CDC3474006214DD /* MASLayoutConstraint.m in Sources */,
@@ -767,9 +808,11 @@
 				6ABBD5F21B49117F006750FF /* UIView+ATUTility.m in Sources */,
 				EC6047281CDC3474006214DD /* CAAnimation+Blocks.m in Sources */,
 				EC5943A71CDC6114003BC526 /* IQBarButtonItem.m in Sources */,
+				ECEA52EA1CDEBB1900FBB9D4 /* RDVTabBarItem.m in Sources */,
 				EC6046D01CDC2A25006214DD /* UITextField+ATUtitlity.m in Sources */,
 				EC6046C91CDC27B8006214DD /* UIImage+Blur.m in Sources */,
 				EC6047331CDC3474006214DD /* DDFileLogger.m in Sources */,
+				ECEA52DC1CDEBAF500FBB9D4 /* UIColor+Hex.m in Sources */,
 				ECE9C20B1B462C2E009871AD /* AppDelegate.m in Sources */,
 				EC6047431CDC3474006214DD /* LoggerClient.m in Sources */,
 				EC60473B1CDC3474006214DD /* MASConstraintMaker.m in Sources */,
@@ -785,6 +828,7 @@
 				EC5943A01CDC6114003BC526 /* IQUITextFieldView+Additions.m in Sources */,
 				EC60473D1CDC3474006214DD /* MASViewAttribute.m in Sources */,
 				EC5943A11CDC6114003BC526 /* IQUIView+Hierarchy.m in Sources */,
+				ECEA52E91CDEBB1900FBB9D4 /* RDVTabBarController.m in Sources */,
 				ECE9C2081B462C2E009871AD /* main.m in Sources */,
 				EC6046CD1CDC2989006214DD /* UIScreen+ATUtitlity.m in Sources */,
 				EC6047271CDC3474006214DD /* Aspects.m in Sources */,
@@ -803,6 +847,7 @@
 				EC5943A61CDC6114003BC526 /* IQTextView.m in Sources */,
 				EC60473A1CDC3474006214DD /* MASConstraint.m in Sources */,
 				EC5943A81CDC6114003BC526 /* IQPreviousNextView.m in Sources */,
+				ECEA52E81CDEBB1900FBB9D4 /* RDVTabBar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -931,10 +976,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = ATUtility/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.DJI.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.arvintan.ATUtility;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -942,10 +991,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = ATUtility/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.DJI.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.arvintan.ATUtility;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
