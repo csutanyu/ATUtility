@@ -80,6 +80,7 @@
 		ECEA52E81CDEBB1900FBB9D4 /* RDVTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = ECEA52E21CDEBB1900FBB9D4 /* RDVTabBar.m */; };
 		ECEA52E91CDEBB1900FBB9D4 /* RDVTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECEA52E41CDEBB1900FBB9D4 /* RDVTabBarController.m */; };
 		ECEA52EA1CDEBB1900FBB9D4 /* RDVTabBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = ECEA52E61CDEBB1900FBB9D4 /* RDVTabBarItem.m */; };
+		ECEA52F71CDEE87800FBB9D4 /* UITableView+ATUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = ECEA52F61CDEE87800FBB9D4 /* UITableView+ATUtility.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -256,6 +257,8 @@
 		ECEA52E41CDEBB1900FBB9D4 /* RDVTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDVTabBarController.m; sourceTree = "<group>"; };
 		ECEA52E51CDEBB1900FBB9D4 /* RDVTabBarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDVTabBarItem.h; sourceTree = "<group>"; };
 		ECEA52E61CDEBB1900FBB9D4 /* RDVTabBarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDVTabBarItem.m; sourceTree = "<group>"; };
+		ECEA52F51CDEE87800FBB9D4 /* UITableView+ATUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+ATUtility.h"; sourceTree = "<group>"; };
+		ECEA52F61CDEE87800FBB9D4 /* UITableView+ATUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+ATUtility.m"; sourceTree = "<group>"; };
 		ECFE546E1CC0E2AA00391D32 /* ATException.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATException.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -642,6 +645,8 @@
 				EC2D641A1BFEAF0B00D00EBF /* UIImage+ATUtility.m */,
 				EC6046CB1CDC2989006214DD /* UIScreen+ATUtitlity.h */,
 				EC6046CC1CDC2989006214DD /* UIScreen+ATUtitlity.m */,
+				ECEA52F51CDEE87800FBB9D4 /* UITableView+ATUtility.h */,
+				ECEA52F61CDEE87800FBB9D4 /* UITableView+ATUtility.m */,
 				EC6046CE1CDC2A25006214DD /* UITextField+ATUtitlity.h */,
 				EC6046CF1CDC2A25006214DD /* UITextField+ATUtitlity.m */,
 				EC54C7BE1C4E24E000684811 /* UIWindow+ATUtility.h */,
@@ -841,6 +846,7 @@
 				ECE9C2081B462C2E009871AD /* main.m in Sources */,
 				EC6046CD1CDC2989006214DD /* UIScreen+ATUtitlity.m in Sources */,
 				EC6047271CDC3474006214DD /* Aspects.m in Sources */,
+				ECEA52F71CDEE87800FBB9D4 /* UITableView+ATUtility.m in Sources */,
 				EC6047311CDC3474006214DD /* DDASLLogCapture.m in Sources */,
 				EC6047341CDC3474006214DD /* DDLog.m in Sources */,
 				ECE9C2301B462C7D009871AD /* NSString+ATUtility.m in Sources */,
