@@ -11,7 +11,6 @@ import UIKit
 @objc public protocol RAReorderableLayoutDelegate: UICollectionViewDelegateFlowLayout {
     //////////////////////
     // added by arvin
-    optional func enableEditForCollectionView(collectionView: UICollectionView) -> Bool
     optional func minimumPressDurationForTriggingEditModeInCollectionView(collectionView: UICollectionView) -> CFTimeInterval
     // end
     ////////////////////
@@ -39,8 +38,37 @@ import UIKit
     optional func scrollSpeedValueInCollectionView(collectionView: UICollectionView) -> CGFloat
 }
 
+//////////////////////
+// added by arvin
+extension UICollectionView {
+    var supportEdit: Bool {
+        get  {
+            guard let raLayout = self.collectionViewLayout as? RAReorderableLayout else {
+                return false
+            }
+            return raLayout.supportEdit
+        }
+        set {
+            guard let raLayout = self.collectionViewLayout as? RAReorderableLayout else {
+                return
+            }
+            raLayout.supportEdit = newValue
+        }
+    }
+}
+// end
+//////////////////////
+
 public class RAReorderableLayout: UICollectionViewFlowLayout, UIGestureRecognizerDelegate {
-    
+    //////////////////////
+    // added by arvin
+    var supportEdit: Bool = false {
+        didSet {
+            self.configureEditMode()
+        }
+    }
+    // End
+    //////////////////////
     private enum direction {
         case toTop
         case toEnd
@@ -198,12 +226,12 @@ public class RAReorderableLayout: UICollectionViewFlowLayout, UIGestureRecognize
     
     // Added by arvin
     func configureEditMode() -> Void {
-        if let _ = delegate?.enableEditForCollectionView?(collectionView!) {
+        if self.supportEdit {
             if let miniPressDuration = delegate?.minimumPressDurationForTriggingEditModeInCollectionView?(collectionView!) {
                 longPress?.minimumPressDuration = miniPressDuration
             }
         } else {
-            longPress?.minimumPressDuration = Double(INT32_MAX)
+            longPress?.minimumPressDuration = Double.infinity
         }
     }
     
