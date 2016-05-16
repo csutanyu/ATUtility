@@ -28,4 +28,7 @@
 - (UIImage *)uiScaledImageWithScaleFactor:(CGFloat)factor;
 
 - (UIImage *)scanedImageWithMaxBytes:(NSUInteger)maxBytes;
+
++ (UIImage *)imageFromColor:(UIColor *)color;
+
 @end
