@@ -9,6 +9,14 @@
 import UIKit
 
 @objc public protocol RAReorderableLayoutDelegate: UICollectionViewDelegateFlowLayout {
+    //////////////////////
+    // added by arvin
+    optional func enableEditForCollectionView(collectionView: UICollectionView) -> Bool
+    optional func minimumPressDurationForTriggingEditModeInCollectionView(collectionView: UICollectionView) -> CFTimeInterval
+    // end
+    ////////////////////
+    
+    
     optional func collectionView(collectionView: UICollectionView, atIndexPath: NSIndexPath, willMoveToIndexPath toIndexPath: NSIndexPath)
     optional func collectionView(collectionView: UICollectionView, atIndexPath: NSIndexPath, didMoveToIndexPath toIndexPath: NSIndexPath)
     
@@ -151,6 +159,7 @@ public class RAReorderableLayout: UICollectionViewFlowLayout, UIGestureRecognize
     
     deinit {
         removeObserver(self, forKeyPath: "collectionView")
+        removeObserver(self, forKeyPath: "collectionView.delegate")
     }
     
     override public func prepareLayout() {
@@ -174,29 +183,43 @@ public class RAReorderableLayout: UICollectionViewFlowLayout, UIGestureRecognize
     
     override public func layoutAttributesForElementsInRect(rect: CGRect) -> [UICollectionViewLayoutAttributes]? {
         guard let attributesArray = super.layoutAttributesForElementsInRect(rect) else { return nil }
-
+        
         attributesArray.filter {
             $0.representedElementCategory == .Cell
-        }.filter {
-            $0.indexPath.isEqual(cellFakeView?.indexPath)
-        }.forEach {
-            // reordering cell alpha
-            $0.alpha = datasource?.collectionView?(collectionView!, reorderingItemAlphaInSection: $0.indexPath.section) ?? 0
+            }.filter {
+                $0.indexPath.isEqual(cellFakeView?.indexPath)
+            }.forEach {
+                // reordering cell alpha
+                $0.alpha = datasource?.collectionView?(collectionView!, reorderingItemAlphaInSection: $0.indexPath.section) ?? 0
         }
-
+        
         return attributesArray
+    }
+    
+    // Added by arvin
+    func configureEditMode() -> Void {
+        if let _ = delegate?.enableEditForCollectionView?(collectionView!) {
+            if let miniPressDuration = delegate?.minimumPressDurationForTriggingEditModeInCollectionView?(collectionView!) {
+                longPress?.minimumPressDuration = miniPressDuration
+            }
+        } else {
+            longPress?.minimumPressDuration = Double(INT32_MAX)
+        }
     }
     
     public override func observeValueForKeyPath(keyPath: String?, ofObject object: AnyObject?, change: [String : AnyObject]?, context: UnsafeMutablePointer<Void>) {
         if keyPath == "collectionView" {
             setUpGestureRecognizers()
-        }else {
+        } else if (keyPath == "collectionView.delegate") {
+            self.configureEditMode()
+        } else {
             super.observeValueForKeyPath(keyPath, ofObject: object, change: change, context: context)
         }
     }
     
     private func configureObserver() {
         addObserver(self, forKeyPath: "collectionView", options: [], context: nil)
+        addObserver(self, forKeyPath: "collectionView.delegate", options: [], context: nil)
     }
     
     private func setUpDisplayLink() {
@@ -324,6 +347,7 @@ public class RAReorderableLayout: UICollectionViewFlowLayout, UIGestureRecognize
         guard let collectionView = collectionView else { return }
         
         longPress = UILongPressGestureRecognizer(target: self, action: #selector(RAReorderableLayout.handleLongPress(_:)))
+        self.configureEditMode()
         panGesture = UIPanGestureRecognizer(target: self, action: #selector(RAReorderableLayout.handlePanGesture(_:)))
         longPress?.delegate = self
         panGesture?.delegate = self
@@ -563,7 +587,7 @@ private class RACellFakeView: UIView {
     private func getCellImage() -> UIImage {
         UIGraphicsBeginImageContextWithOptions(cell!.bounds.size, false, UIScreen.mainScreen().scale * 2)
         defer { UIGraphicsEndImageContext() }
-
+        
         cell!.drawViewHierarchyInRect(cell!.bounds, afterScreenUpdates: true)
         return UIGraphicsGetImageFromCurrentImageContext()
     }
