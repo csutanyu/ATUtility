@@ -66,6 +66,7 @@
 		EC6047481CDC37BD006214DD /* LumberjackLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = EC6047471CDC37BD006214DD /* LumberjackLogFormatter.m */; };
 		EC71E6761C74205900CF5FC8 /* EACoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = EC71E6751C74205900CF5FC8 /* EACoordinator.m */; };
 		EC82A1891CE971C500A61A41 /* SettingsURLConstant.m in Sources */ = {isa = PBXBuildFile; fileRef = EC82A1881CE971C500A61A41 /* SettingsURLConstant.m */; };
+		EC82A18B1CE9848E00A61A41 /* WigglingCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC82A18A1CE9848E00A61A41 /* WigglingCollectionView.swift */; };
 		ECE9C2081B462C2E009871AD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ECE9C2071B462C2E009871AD /* main.m */; };
 		ECE9C20B1B462C2E009871AD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ECE9C20A1B462C2E009871AD /* AppDelegate.m */; };
 		ECE9C20E1B462C2E009871AD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECE9C20D1B462C2E009871AD /* ViewController.m */; };
@@ -230,6 +231,7 @@
 		EC71E6751C74205900CF5FC8 /* EACoordinator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EACoordinator.m; sourceTree = "<group>"; };
 		EC82A1871CE971C500A61A41 /* SettingsURLConstant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsURLConstant.h; sourceTree = "<group>"; };
 		EC82A1881CE971C500A61A41 /* SettingsURLConstant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsURLConstant.m; sourceTree = "<group>"; };
+		EC82A18A1CE9848E00A61A41 /* WigglingCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WigglingCollectionView.swift; sourceTree = "<group>"; };
 		ECE9C2021B462C2E009871AD /* ATUtility.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ATUtility.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECE9C2061B462C2E009871AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ECE9C2071B462C2E009871AD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -644,6 +646,7 @@
 				EC6046CF1CDC2A25006214DD /* UITextField+ATUtitlity.m */,
 				EC54C7BE1C4E24E000684811 /* UIWindow+ATUtility.h */,
 				EC54C7BF1C4E24E000684811 /* UIWindow+ATUtility.m */,
+				EC82A18A1CE9848E00A61A41 /* WigglingCollectionView.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -790,6 +793,7 @@
 			files = (
 				EC5943A41CDC6114003BC526 /* IQKeyboardManager.m in Sources */,
 				ECE9C20E1B462C2E009871AD /* ViewController.m in Sources */,
+				EC82A18B1CE9848E00A61A41 /* WigglingCollectionView.swift in Sources */,
 				EC59439F1CDC6114003BC526 /* IQUIScrollView+Additions.m in Sources */,
 				EC2D64181BFEAE1800D00EBF /* UIDevice+ATUtility.m in Sources */,
 				6ABBD5ED1B4908BB006750FF /* NSData+ATUtility.m in Sources */,
