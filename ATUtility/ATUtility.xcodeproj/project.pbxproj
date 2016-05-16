@@ -65,6 +65,7 @@
 		EC6047441CDC3474006214DD /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = EC6047261CDC3474006214DD /* Reachability.m */; };
 		EC6047481CDC37BD006214DD /* LumberjackLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = EC6047471CDC37BD006214DD /* LumberjackLogFormatter.m */; };
 		EC71E6761C74205900CF5FC8 /* EACoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = EC71E6751C74205900CF5FC8 /* EACoordinator.m */; };
+		EC82A1891CE971C500A61A41 /* SettingsURLConstant.m in Sources */ = {isa = PBXBuildFile; fileRef = EC82A1881CE971C500A61A41 /* SettingsURLConstant.m */; };
 		ECE9C2081B462C2E009871AD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ECE9C2071B462C2E009871AD /* main.m */; };
 		ECE9C20B1B462C2E009871AD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ECE9C20A1B462C2E009871AD /* AppDelegate.m */; };
 		ECE9C20E1B462C2E009871AD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECE9C20D1B462C2E009871AD /* ViewController.m */; };
@@ -227,6 +228,8 @@
 		EC6047471CDC37BD006214DD /* LumberjackLogFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LumberjackLogFormatter.m; sourceTree = "<group>"; };
 		EC71E6741C74205900CF5FC8 /* EACoordinator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EACoordinator.h; sourceTree = "<group>"; };
 		EC71E6751C74205900CF5FC8 /* EACoordinator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EACoordinator.m; sourceTree = "<group>"; };
+		EC82A1871CE971C500A61A41 /* SettingsURLConstant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsURLConstant.h; sourceTree = "<group>"; };
+		EC82A1881CE971C500A61A41 /* SettingsURLConstant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsURLConstant.m; sourceTree = "<group>"; };
 		ECE9C2021B462C2E009871AD /* ATUtility.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ATUtility.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECE9C2061B462C2E009871AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ECE9C2071B462C2E009871AD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -598,6 +601,8 @@
 		ECE9C22C1B462C56009871AD /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
+				EC82A1871CE971C500A61A41 /* SettingsURLConstant.h */,
+				EC82A1881CE971C500A61A41 /* SettingsURLConstant.m */,
 				ECFE546E1CC0E2AA00391D32 /* ATException.h */,
 				ECE9C22E1B462C7D009871AD /* NSString+ATUtility.h */,
 				6ABBD5F41B491235006750FF /* NSObject+ATUtility.h */,
@@ -847,6 +852,7 @@
 				EC5943A61CDC6114003BC526 /* IQTextView.m in Sources */,
 				EC60473A1CDC3474006214DD /* MASConstraint.m in Sources */,
 				EC5943A81CDC6114003BC526 /* IQPreviousNextView.m in Sources */,
+				EC82A1891CE971C500A61A41 /* SettingsURLConstant.m in Sources */,
 				ECEA52E81CDEBB1900FBB9D4 /* RDVTabBar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -976,8 +982,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				INFOPLIST_FILE = ATUtility/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -991,8 +997,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				INFOPLIST_FILE = ATUtility/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
