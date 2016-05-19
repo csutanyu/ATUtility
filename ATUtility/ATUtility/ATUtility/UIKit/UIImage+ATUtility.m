@@ -179,8 +179,41 @@
     CGContextFillRect(context, rect);
     UIImage *theImage = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
-    
     return theImage;
+}
+
+- (UIImage *)imageWithGaussianBlurWithRadius:(NSNumber *)radius {
+    CIContext *context = [CIContext contextWithOptions:nil];
+    
+    // Let's log the list of "blur" filters that are available on the device.
+    // From this we see that "CIGaussianBlur" is available.
+    // It's best to play with this in GDB. Try:
+    // p [CIFilter filterNamesInCategory:kCICategoryBlur]
+    // in the debugger.
+    NSLog(@"%@", [CIFilter filterNamesInCategory:kCICategoryBlur]);
+    // What other categories can you find?
+    
+    CIFilter *blurFilter = [CIFilter filterWithName:@"CIGaussianBlur"];
+    // Logging a CIFilter's attributes gives all of the information on the filter
+    // and what values it accepts.
+    NSLog(@"%@", [blurFilter attributes]);
+    [blurFilter setDefaults];
+    
+    // So in some cases we don't get a CIImage from a UIImage.
+    // That's ok - we can make a CIImage from the UIImage's CGImage. Hooray!
+    CIImage *imageToBlur = [CIImage imageWithCGImage:self.CGImage];
+    
+    // iOS provides a nice constant for the input image key
+    [blurFilter setValue:imageToBlur forKey:kCIInputImageKey];
+    // ... but not for anything else
+    if (radius) {
+        [blurFilter setValue:radius forKey:@"inputRadius"];
+    }
+    
+    CIImage *result = [blurFilter valueForKey:kCIOutputImageKey];
+    CGImageRef cgImage = [context createCGImage:result fromRect:[imageToBlur extent]];
+    
+    return [UIImage imageWithCGImage:cgImage];
 }
 
 @end

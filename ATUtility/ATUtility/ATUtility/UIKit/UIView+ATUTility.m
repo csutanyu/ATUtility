@@ -79,4 +79,12 @@
     self.layer.borderColor = borderColor.CGColor;
 }
 
+- (UIImage * _Null_unspecified)snapshotImage {
+    UIGraphicsBeginImageContextWithOptions(self.bounds.size, NO, [[UIScreen mainScreen] scale]);
+    [self drawViewHierarchyInRect:self.bounds afterScreenUpdates:NO];
+    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return image;
+}
+
 @end

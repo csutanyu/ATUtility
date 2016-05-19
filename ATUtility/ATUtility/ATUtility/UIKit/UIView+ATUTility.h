@@ -24,4 +24,6 @@ typedef NS_OPTIONS(NSInteger, LinePosition) {
 
 - (void)addBorderWithWidth:(CGFloat)borderWidth cornerRadius:(CGFloat)cornerRadius color:(UIColor *) borderColor;
 
+- (UIImage * _Null_unspecified)snapshotImage;
+
 @end

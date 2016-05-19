@@ -31,4 +31,6 @@
 
 + (UIImage *)imageFromColor:(UIColor *)color;
 
+- (UIImage *)imageWithGaussianBlurWithRadius:(NSNumber *)radius;
+
 @end
