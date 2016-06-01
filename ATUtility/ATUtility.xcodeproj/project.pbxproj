@@ -64,6 +64,7 @@
 		EC6047431CDC3474006214DD /* LoggerClient.m in Sources */ = {isa = PBXBuildFile; fileRef = EC6047221CDC3474006214DD /* LoggerClient.m */; };
 		EC6047441CDC3474006214DD /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = EC6047261CDC3474006214DD /* Reachability.m */; };
 		EC6047481CDC37BD006214DD /* LumberjackLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = EC6047471CDC37BD006214DD /* LumberjackLogFormatter.m */; };
+		EC695B571CFE7FB00098DBEA /* AdjustHitAreaButton.m in Sources */ = {isa = PBXBuildFile; fileRef = EC695B561CFE7FB00098DBEA /* AdjustHitAreaButton.m */; };
 		EC71E6761C74205900CF5FC8 /* EACoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = EC71E6751C74205900CF5FC8 /* EACoordinator.m */; };
 		EC82A1891CE971C500A61A41 /* SettingsURLConstant.m in Sources */ = {isa = PBXBuildFile; fileRef = EC82A1881CE971C500A61A41 /* SettingsURLConstant.m */; };
 		EC82A18B1CE9848E00A61A41 /* WigglingCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC82A18A1CE9848E00A61A41 /* WigglingCollectionView.swift */; };
@@ -228,6 +229,8 @@
 		EC6047451CDC3558006214DD /* Swift-Briging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Swift-Briging-Header.h"; sourceTree = "<group>"; };
 		EC6047461CDC37BD006214DD /* LumberjackLogFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LumberjackLogFormatter.h; sourceTree = "<group>"; };
 		EC6047471CDC37BD006214DD /* LumberjackLogFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LumberjackLogFormatter.m; sourceTree = "<group>"; };
+		EC695B551CFE7FB00098DBEA /* AdjustHitAreaButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdjustHitAreaButton.h; sourceTree = "<group>"; };
+		EC695B561CFE7FB00098DBEA /* AdjustHitAreaButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdjustHitAreaButton.m; sourceTree = "<group>"; };
 		EC71E6741C74205900CF5FC8 /* EACoordinator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EACoordinator.h; sourceTree = "<group>"; };
 		EC71E6751C74205900CF5FC8 /* EACoordinator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EACoordinator.m; sourceTree = "<group>"; };
 		EC82A1871CE971C500A61A41 /* SettingsURLConstant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsURLConstant.h; sourceTree = "<group>"; };
@@ -629,6 +632,8 @@
 			children = (
 				ECEA52DE1CDEBB1900FBB9D4 /* RAReorderableLayout */,
 				ECEA52E01CDEBB1900FBB9D4 /* RDVTabBarController */,
+				EC695B551CFE7FB00098DBEA /* AdjustHitAreaButton.h */,
+				EC695B561CFE7FB00098DBEA /* AdjustHitAreaButton.m */,
 				6A5832531B7EE7D9007967F2 /* DismissKeyboardWindow.h */,
 				6A5832541B7EE7D9007967F2 /* DismissKeyboardWindow.m */,
 				6ABBD5EE1B49117F006750FF /* UIView+ATUTility.h */,
@@ -849,6 +854,7 @@
 				ECEA52F71CDEE87800FBB9D4 /* UITableView+ATUtility.m in Sources */,
 				EC6047311CDC3474006214DD /* DDASLLogCapture.m in Sources */,
 				EC6047341CDC3474006214DD /* DDLog.m in Sources */,
+				EC695B571CFE7FB00098DBEA /* AdjustHitAreaButton.m in Sources */,
 				ECE9C2301B462C7D009871AD /* NSString+ATUtility.m in Sources */,
 				EC6047401CDC3474006214DD /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				EC59439E1CDC6114003BC526 /* IQNSArray+Sort.m in Sources */,
