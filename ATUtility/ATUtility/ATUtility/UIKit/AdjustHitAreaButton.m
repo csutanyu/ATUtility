@@ -13,21 +13,21 @@
 
 - (instancetype)initWithCoder:(NSCoder *)aDecoder {
     if (self = [super initWithCoder:aDecoder]) {
-        
+        [self commanInit];
     }
     return self;
 }
 
 - (instancetype)initWithFrame:(CGRect)frame {
     if (self = [super initWithFrame:frame]) {
-        
+        [self commanInit];
     }
     return self;
 }
 
 - (instancetype)init {
     if (self = [super init]) {
-        
+        [self commanInit];
     }
     return self;
 }
