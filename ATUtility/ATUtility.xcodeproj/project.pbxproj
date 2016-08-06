@@ -16,6 +16,7 @@
 		6ABBD5F31B49117F006750FF /* UIView+LTKAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ABBD5F11B49117F006750FF /* UIView+LTKAdditions.m */; };
 		6ABBD5F61B491235006750FF /* NSObject+ATUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ABBD5F51B491235006750FF /* NSObject+ATUtility.m */; };
 		EC16E3E31D192E6A00DE3B5A /* NSString+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = EC16E3E21D192E6A00DE3B5A /* NSString+Hex.m */; };
+		EC1276A91D55A779004CF9BD /* UIImage+RoundCorner.m in Sources */ = {isa = PBXBuildFile; fileRef = EC1276A81D55A779004CF9BD /* UIImage+RoundCorner.m */; };
 		EC2D64181BFEAE1800D00EBF /* UIDevice+ATUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = EC2D64171BFEAE1800D00EBF /* UIDevice+ATUtility.m */; };
 		EC2D641B1BFEAF0B00D00EBF /* UIImage+ATUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = EC2D641A1BFEAF0B00D00EBF /* UIImage+ATUtility.m */; };
 		EC54C7C01C4E24E000684811 /* UIWindow+ATUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = EC54C7BF1C4E24E000684811 /* UIWindow+ATUtility.m */; };
@@ -120,6 +121,8 @@
 		6ABBD5F51B491235006750FF /* NSObject+ATUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+ATUtility.m"; sourceTree = "<group>"; };
 		EC16E3E11D192E6A00DE3B5A /* NSString+Hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Hex.h"; sourceTree = "<group>"; };
 		EC16E3E21D192E6A00DE3B5A /* NSString+Hex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Hex.m"; sourceTree = "<group>"; };
+		EC1276A71D55A779004CF9BD /* UIImage+RoundCorner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+RoundCorner.h"; sourceTree = "<group>"; };
+		EC1276A81D55A779004CF9BD /* UIImage+RoundCorner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+RoundCorner.m"; sourceTree = "<group>"; };
 		EC2D64161BFEAE1800D00EBF /* UIDevice+ATUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+ATUtility.h"; sourceTree = "<group>"; };
 		EC2D64171BFEAE1800D00EBF /* UIDevice+ATUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+ATUtility.m"; sourceTree = "<group>"; };
 		EC2D64191BFEAF0B00D00EBF /* UIImage+ATUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ATUtility.h"; sourceTree = "<group>"; };
@@ -643,6 +646,8 @@
 				6A5832541B7EE7D9007967F2 /* DismissKeyboardWindow.m */,
 				6ABBD5EE1B49117F006750FF /* UIView+ATUTility.h */,
 				6ABBD5EF1B49117F006750FF /* UIView+ATUTility.m */,
+				EC1276A71D55A779004CF9BD /* UIImage+RoundCorner.h */,
+				EC1276A81D55A779004CF9BD /* UIImage+RoundCorner.m */,
 				EC6046C71CDC27B8006214DD /* UIImage+Blur.h */,
 				EC6046C81CDC27B8006214DD /* UIImage+Blur.m */,
 				6ABBD5F01B49117F006750FF /* UIView+LTKAdditions.h */,
@@ -863,6 +868,7 @@
 				ECE9C2301B462C7D009871AD /* NSString+ATUtility.m in Sources */,
 				EC6047401CDC3474006214DD /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				EC59439E1CDC6114003BC526 /* IQNSArray+Sort.m in Sources */,
+				EC1276A91D55A779004CF9BD /* UIImage+RoundCorner.m in Sources */,
 				EC6047361CDC3474006214DD /* DDContextFilterLogFormatter.m in Sources */,
 				EC6046D41CDC3440006214DD /* LumberjackManager.m in Sources */,
 				EC2D641B1BFEAF0B00D00EBF /* UIImage+ATUtility.m in Sources */,
