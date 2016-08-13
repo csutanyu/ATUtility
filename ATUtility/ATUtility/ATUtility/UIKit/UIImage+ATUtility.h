@@ -34,3 +34,11 @@
 - (UIImage *)imageWithGaussianBlurWithRadius:(NSNumber *)radius;
 
 @end
+
+@interface UIImage (RoundCorner)
+
+- (UIImage *)imageWithRoundCornerRadius:(CGFloat)radius sizeToFit:(CGSize)sizeToFit;
+
+- (UIImage *)imageWithRoundCornerRadius:(CGFloat)radius sizeToFit:(CGSize)sizeToFit borderWidth:(CGFloat)borderWidth borderColor:(UIColor *)borderColor;
+
+@end
