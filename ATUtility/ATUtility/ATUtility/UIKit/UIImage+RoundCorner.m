@@ -11,13 +11,31 @@
 @implementation UIImage (RoundCorner)
 
 - (UIImage *)imageWithRoundCornerRadius:(CGFloat)radius sizeToFit:(CGSize)sizeToFit {
+    return [self imageWithRoundCornerRadius:radius sizeToFit:sizeToFit borderWidth:0 borderColor:nil];
+}
+
+- (UIImage *)imageWithRoundCornerRadius:(CGFloat)radius sizeToFit:(CGSize)sizeToFit borderWidth:(CGFloat)borderWidth borderColor:(UIColor *)borderColor {
     CGRect rect = CGRectMake(0, 0, sizeToFit.width, sizeToFit.height);
     UIGraphicsBeginImageContextWithOptions(rect.size, false, [UIScreen mainScreen].scale);
-    CGContextAddPath(UIGraphicsGetCurrentContext(), [UIBezierPath bezierPathWithRoundedRect:rect byRoundingCorners:UIRectCornerAllCorners cornerRadii:CGSizeMake(radius, radius)].CGPath);
+    CGContextBeginPath(UIGraphicsGetCurrentContext());
+    CGContextAddEllipseInRect(UIGraphicsGetCurrentContext(), rect);
+    CGContextClosePath(UIGraphicsGetCurrentContext());
     CGContextClip(UIGraphicsGetCurrentContext());
+    
     [self drawInRect:rect];
-    CGContextDrawPath(UIGraphicsGetCurrentContext(), kCGPathFill);
+    
+    if (borderWidth > 0 && borderColor) {
+        CGContextBeginPath(UIGraphicsGetCurrentContext());
+        CGContextAddEllipseInRect(UIGraphicsGetCurrentContext(), CGRectMake(borderWidth / 2, borderWidth / 2, sizeToFit.width - borderWidth, sizeToFit.height - borderWidth));
+        CGContextClosePath(UIGraphicsGetCurrentContext());
+        CGContextSetLineWidth(UIGraphicsGetCurrentContext(), borderWidth);
+        CGContextSetStrokeColorWithColor(UIGraphicsGetCurrentContext(), borderColor.CGColor);
+        CGContextStrokePath(UIGraphicsGetCurrentContext());
+    }
     UIImage *outImage = UIGraphicsGetImageFromCurrentImageContext();
+    
+    UIGraphicsEndImageContext();
+    
     return outImage;
 }
 
