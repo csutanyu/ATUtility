@@ -16,6 +16,7 @@ typedef NS_OPTIONS(NSInteger, LinePosition) {
     LinePositionAll = LinePositionBottom | LinePositionLeft | LinePositionRight | LinePositionTop
 };
 
+NS_ASSUME_NONNULL_BEGIN
 @interface UIView (ATUTility)
 
 - (void)addDashLineInPosition:(LinePosition)position unitLength:(CGFloat)unitLength lineWidth:(CGFloat)lineWidth color:(UIColor *)color;
@@ -27,3 +28,4 @@ typedef NS_OPTIONS(NSInteger, LinePosition) {
 - (UIImage * _Null_unspecified)snapshotImage;
 
 @end
+NS_ASSUME_NONNULL_END
