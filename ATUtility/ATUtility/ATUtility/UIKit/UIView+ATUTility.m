@@ -79,6 +79,19 @@
     self.layer.borderColor = borderColor.CGColor;
 }
 
+- (void)addDashLineInPosition:(LinePosition)position unitLength:(CGFloat)unitLength lineWidth:(CGFloat)lineWidth color:(UIColor *)color scale:(BOOL)scale {
+  [self addDashLineInPosition:position unitLength:unitLength lineWidth: scale ? lineWidth / [UIScreen mainScreen].scale : lineWidth color:color];
+}
+
+- (void)addSolidLineInPosition:(LinePosition)position lineWidth:(CGFloat)lineWidth color:(UIColor *)color scale:(BOOL)scale {
+  [self addSolidLineInPosition:position lineWidth:scale ? lineWidth / [UIScreen mainScreen].scale : lineWidth color:color];
+}
+
+- (void)addBorderWithWidth:(CGFloat)borderWidth cornerRadius:(CGFloat)cornerRadius color:(UIColor *) borderColor scale:(BOOL)scale {
+  [self addBorderWithWidth:scale ? borderWidth / [UIScreen mainScreen].scale : borderWidth cornerRadius:cornerRadius color:borderColor];
+}
+
+
 - (UIImage * _Null_unspecified)snapshotImage {
     UIGraphicsBeginImageContextWithOptions(self.bounds.size, NO, [[UIScreen mainScreen] scale]);
     [self drawViewHierarchyInRect:self.bounds afterScreenUpdates:NO];

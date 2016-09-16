@@ -20,10 +20,12 @@ NS_ASSUME_NONNULL_BEGIN
 @interface UIView (ATUTility)
 
 - (void)addDashLineInPosition:(LinePosition)position unitLength:(CGFloat)unitLength lineWidth:(CGFloat)lineWidth color:(UIColor *)color;
-
 - (void)addSolidLineInPosition:(LinePosition)position lineWidth:(CGFloat)lineWidth color:(UIColor *)color;
-
 - (void)addBorderWithWidth:(CGFloat)borderWidth cornerRadius:(CGFloat)cornerRadius color:(UIColor *) borderColor;
+
+- (void)addDashLineInPosition:(LinePosition)position unitLength:(CGFloat)unitLength lineWidth:(CGFloat)lineWidth color:(UIColor *)color scale:(BOOL)scale;
+- (void)addSolidLineInPosition:(LinePosition)position lineWidth:(CGFloat)lineWidth color:(UIColor *)color scale:(BOOL)scale;
+- (void)addBorderWithWidth:(CGFloat)borderWidth cornerRadius:(CGFloat)cornerRadius color:(UIColor *) borderColor scale:(BOOL)scale;
 
 - (UIImage * _Null_unspecified)snapshotImage;
 
