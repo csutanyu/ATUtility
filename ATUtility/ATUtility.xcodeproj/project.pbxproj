@@ -15,8 +15,8 @@
 		6ABBD5F21B49117F006750FF /* UIView+ATUTility.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ABBD5EF1B49117F006750FF /* UIView+ATUTility.m */; };
 		6ABBD5F31B49117F006750FF /* UIView+LTKAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ABBD5F11B49117F006750FF /* UIView+LTKAdditions.m */; };
 		6ABBD5F61B491235006750FF /* NSObject+ATUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ABBD5F51B491235006750FF /* NSObject+ATUtility.m */; };
-		EC16E3E31D192E6A00DE3B5A /* NSString+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = EC16E3E21D192E6A00DE3B5A /* NSString+Hex.m */; };
 		EC1276A91D55A779004CF9BD /* UIImage+RoundCorner.m in Sources */ = {isa = PBXBuildFile; fileRef = EC1276A81D55A779004CF9BD /* UIImage+RoundCorner.m */; };
+		EC16E3E31D192E6A00DE3B5A /* NSString+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = EC16E3E21D192E6A00DE3B5A /* NSString+Hex.m */; };
 		EC2D64181BFEAE1800D00EBF /* UIDevice+ATUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = EC2D64171BFEAE1800D00EBF /* UIDevice+ATUtility.m */; };
 		EC2D641B1BFEAF0B00D00EBF /* UIImage+ATUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = EC2D641A1BFEAF0B00D00EBF /* UIImage+ATUtility.m */; };
 		EC54C7C01C4E24E000684811 /* UIWindow+ATUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = EC54C7BF1C4E24E000684811 /* UIWindow+ATUtility.m */; };
@@ -119,10 +119,10 @@
 		6ABBD5F11B49117F006750FF /* UIView+LTKAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+LTKAdditions.m"; sourceTree = "<group>"; };
 		6ABBD5F41B491235006750FF /* NSObject+ATUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+ATUtility.h"; sourceTree = "<group>"; };
 		6ABBD5F51B491235006750FF /* NSObject+ATUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+ATUtility.m"; sourceTree = "<group>"; };
-		EC16E3E11D192E6A00DE3B5A /* NSString+Hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Hex.h"; sourceTree = "<group>"; };
-		EC16E3E21D192E6A00DE3B5A /* NSString+Hex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Hex.m"; sourceTree = "<group>"; };
 		EC1276A71D55A779004CF9BD /* UIImage+RoundCorner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+RoundCorner.h"; sourceTree = "<group>"; };
 		EC1276A81D55A779004CF9BD /* UIImage+RoundCorner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+RoundCorner.m"; sourceTree = "<group>"; };
+		EC16E3E11D192E6A00DE3B5A /* NSString+Hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Hex.h"; sourceTree = "<group>"; };
+		EC16E3E21D192E6A00DE3B5A /* NSString+Hex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Hex.m"; sourceTree = "<group>"; };
 		EC2D64161BFEAE1800D00EBF /* UIDevice+ATUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+ATUtility.h"; sourceTree = "<group>"; };
 		EC2D64171BFEAE1800D00EBF /* UIDevice+ATUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+ATUtility.m"; sourceTree = "<group>"; };
 		EC2D64191BFEAF0B00D00EBF /* UIImage+ATUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ATUtility.h"; sourceTree = "<group>"; };
@@ -742,9 +742,11 @@
 					ECE9C2011B462C2E009871AD = {
 						CreatedOnToolsVersion = 6.3.1;
 						DevelopmentTeam = X5TW3SPY8J;
+						LastSwiftMigration = 0800;
 					};
 					ECE9C21A1B462C2E009871AD = {
 						CreatedOnToolsVersion = 6.3.1;
+						LastSwiftMigration = 0800;
 						TestTargetID = ECE9C2011B462C2E009871AD;
 					};
 				};
@@ -1018,6 +1020,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.arvintan.ATUtility;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -1033,6 +1036,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.arvintan.ATUtility;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -1052,6 +1056,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.DJI.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ATUtility.app/ATUtility";
 			};
 			name = Debug;
@@ -1068,6 +1073,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.DJI.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ATUtility.app/ATUtility";
 			};
 			name = Release;

@@ -20,21 +20,21 @@ class WigglingCollectionView: UICollectionView {
     }
     
     func startWiggle() {
-        for cell in visibleCells() {
+        for cell in visibleCells {
             addWiggleAnimationToCell(cell)
         }
         isWiggling = true
     }
     
     func stopWiggle() {
-        for cell in visibleCells() {
+        for cell in visibleCells {
             cell.layer.removeAllAnimations()
         }
         isWiggling = false
     }
     
-    override func dequeueReusableCellWithReuseIdentifier(identifier: String, forIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        let cell: UICollectionViewCell = super.dequeueReusableCellWithReuseIdentifier(identifier, forIndexPath: indexPath)
+    override func dequeueReusableCell(withReuseIdentifier identifier: String, for indexPath: IndexPath) -> UICollectionViewCell {
+        let cell: UICollectionViewCell = super.dequeueReusableCell(withReuseIdentifier: identifier, for: indexPath)
         if isWiggling {
             addWiggleAnimationToCell(cell)
         } else {
@@ -43,18 +43,18 @@ class WigglingCollectionView: UICollectionView {
         return cell
     }
     
-    func addWiggleAnimationToCell(cell: UICollectionViewCell) {
+    func addWiggleAnimationToCell(_ cell: UICollectionViewCell) {
         CATransaction.begin()
         CATransaction.setDisableActions(false)
-        cell.layer.addAnimation(rotationAnimation(), forKey: "rotation")
-        cell.layer.addAnimation(bounceAnimation(), forKey: "bounce")
+        cell.layer.add(rotationAnimation(), forKey: "rotation")
+        cell.layer.add(bounceAnimation(), forKey: "bounce")
         CATransaction.commit()
     }
     
-    private func rotationAnimation() -> CAKeyframeAnimation {
+    fileprivate func rotationAnimation() -> CAKeyframeAnimation {
         let animation = CAKeyframeAnimation(keyPath: "transform.rotation.z")
         let angle = CGFloat(0.04)
-        let duration = NSTimeInterval(0.1)
+        let duration = TimeInterval(0.1)
         let variance = Double(0.025)
         animation.values = [angle, -angle]
         animation.autoreverses = true
@@ -63,10 +63,10 @@ class WigglingCollectionView: UICollectionView {
         return animation
     }
     
-    private func bounceAnimation() -> CAKeyframeAnimation {
+    fileprivate func bounceAnimation() -> CAKeyframeAnimation {
         let animation = CAKeyframeAnimation(keyPath: "transform.translation.y")
         let bounce = CGFloat(3.0)
-        let duration = NSTimeInterval(0.12)
+        let duration = TimeInterval(0.12)
         let variance = Double(0.025)
         animation.values = [bounce, -bounce]
         animation.autoreverses = true
@@ -75,7 +75,7 @@ class WigglingCollectionView: UICollectionView {
         return animation
     }
     
-    private func randomizeInterval(interval: NSTimeInterval, withVariance variance:Double) -> NSTimeInterval {
+    fileprivate func randomizeInterval(_ interval: TimeInterval, withVariance variance:Double) -> TimeInterval {
         let random = (Double(arc4random_uniform(1000)) - 500.0) / 500.0
         return interval + variance * random;
     }
