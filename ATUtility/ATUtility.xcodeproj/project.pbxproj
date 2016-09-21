@@ -70,6 +70,7 @@
 		EC71E6761C74205900CF5FC8 /* EACoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = EC71E6751C74205900CF5FC8 /* EACoordinator.m */; };
 		EC82A1891CE971C500A61A41 /* SettingsURLConstant.m in Sources */ = {isa = PBXBuildFile; fileRef = EC82A1881CE971C500A61A41 /* SettingsURLConstant.m */; };
 		EC82A18B1CE9848E00A61A41 /* WigglingCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC82A18A1CE9848E00A61A41 /* WigglingCollectionView.swift */; };
+		ECA5C1831D913FCE00A1192D /* UIImageView+KeyFrameAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA5C1821D913FCE00A1192D /* UIImageView+KeyFrameAnimation.m */; };
 		ECE9C2081B462C2E009871AD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ECE9C2071B462C2E009871AD /* main.m */; };
 		ECE9C20B1B462C2E009871AD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ECE9C20A1B462C2E009871AD /* AppDelegate.m */; };
 		ECE9C20E1B462C2E009871AD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECE9C20D1B462C2E009871AD /* ViewController.m */; };
@@ -242,6 +243,8 @@
 		EC82A1871CE971C500A61A41 /* SettingsURLConstant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsURLConstant.h; sourceTree = "<group>"; };
 		EC82A1881CE971C500A61A41 /* SettingsURLConstant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsURLConstant.m; sourceTree = "<group>"; };
 		EC82A18A1CE9848E00A61A41 /* WigglingCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WigglingCollectionView.swift; sourceTree = "<group>"; };
+		ECA5C1811D913FCE00A1192D /* UIImageView+KeyFrameAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+KeyFrameAnimation.h"; sourceTree = "<group>"; };
+		ECA5C1821D913FCE00A1192D /* UIImageView+KeyFrameAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+KeyFrameAnimation.m"; sourceTree = "<group>"; };
 		ECE9C2021B462C2E009871AD /* ATUtility.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ATUtility.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECE9C2061B462C2E009871AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ECE9C2071B462C2E009871AD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -666,6 +669,8 @@
 				EC6046CF1CDC2A25006214DD /* UITextField+ATUtitlity.m */,
 				EC54C7BE1C4E24E000684811 /* UIWindow+ATUtility.h */,
 				EC54C7BF1C4E24E000684811 /* UIWindow+ATUtility.m */,
+				ECA5C1811D913FCE00A1192D /* UIImageView+KeyFrameAnimation.h */,
+				ECA5C1821D913FCE00A1192D /* UIImageView+KeyFrameAnimation.m */,
 				EC82A18A1CE9848E00A61A41 /* WigglingCollectionView.swift */,
 			);
 			path = UIKit;
@@ -858,6 +863,7 @@
 				6A5832551B7EE7D9007967F2 /* DismissKeyboardWindow.m in Sources */,
 				EC5943A01CDC6114003BC526 /* IQUITextFieldView+Additions.m in Sources */,
 				EC60473D1CDC3474006214DD /* MASViewAttribute.m in Sources */,
+				ECA5C1831D913FCE00A1192D /* UIImageView+KeyFrameAnimation.m in Sources */,
 				EC5943A11CDC6114003BC526 /* IQUIView+Hierarchy.m in Sources */,
 				ECEA52E91CDEBB1900FBB9D4 /* RDVTabBarController.m in Sources */,
 				ECE9C2081B462C2E009871AD /* main.m in Sources */,
