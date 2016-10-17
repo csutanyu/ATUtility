@@ -9,7 +9,7 @@
 #import "UIImage+ATUtility.h"
 #import <Accelerate/Accelerate.h>
 
-@implementation UIImage (ATUtility)
+@implementation UIImage (Blur)
 
 - (UIImage *)imageWithBlur {
     return [self imageWithLightAlpha:0.1 radius:3 colorSaturationFactor:1.8];
@@ -171,17 +171,6 @@
     return thumbnailImage;
 }
 
-+ (UIImage *)imageFromColor:(UIColor *)color {
-    CGRect rect = CGRectMake(0.0f, 0.0f, 1.0f, 1.0f);
-    UIGraphicsBeginImageContext(rect.size);
-    CGContextRef context = UIGraphicsGetCurrentContext();
-    CGContextSetFillColorWithColor(context, [color CGColor]);
-    CGContextFillRect(context, rect);
-    UIImage *theImage = UIGraphicsGetImageFromCurrentImageContext();
-    UIGraphicsEndImageContext();
-    return theImage;
-}
-
 - (UIImage *)imageWithGaussianBlurWithRadius:(NSNumber *)radius {
     CIContext *context = [CIContext contextWithOptions:nil];
     
@@ -214,6 +203,80 @@
     CGImageRef cgImage = [context createCGImage:result fromRect:[imageToBlur extent]];
     
     return [UIImage imageWithCGImage:cgImage];
+}
+
+@end
+
+@implementation UIImage (Alpha)
+
+- (UIImage *)imageByApplyingAlpha:(CGFloat) alpha {
+  UIGraphicsBeginImageContextWithOptions(self.size, NO, 0.0f);
+  
+  CGContextRef ctx = UIGraphicsGetCurrentContext();
+  CGRect area = CGRectMake(0, 0, self.size.width, self.size.height);
+  
+  CGContextScaleCTM(ctx, 1, -1);
+  CGContextTranslateCTM(ctx, 0, -area.size.height);
+  
+  CGContextSetBlendMode(ctx, kCGBlendModeMultiply);
+  
+  CGContextSetAlpha(ctx, alpha);
+  
+  CGContextDrawImage(ctx, area, self.CGImage);
+  
+  UIImage *newImage = UIGraphicsGetImageFromCurrentImageContext();
+  
+  UIGraphicsEndImageContext();
+  
+  return newImage;
+}
+
+@end
+
+@implementation UIImage (RoundCorner)
+
+- (UIImage *)imageWithRoundCornerRadius:(CGFloat)radius sizeToFit:(CGSize)sizeToFit {
+  return [self imageWithRoundCornerRadius:radius sizeToFit:sizeToFit borderWidth:0 borderColor:nil];
+}
+
+- (UIImage *)imageWithRoundCornerRadius:(CGFloat)radius sizeToFit:(CGSize)sizeToFit borderWidth:(CGFloat)borderWidth borderColor:(UIColor *)borderColor {
+  CGRect rect = CGRectMake(0, 0, sizeToFit.width, sizeToFit.height);
+  UIGraphicsBeginImageContextWithOptions(rect.size, false, [UIScreen mainScreen].scale);
+  CGContextBeginPath(UIGraphicsGetCurrentContext());
+  CGContextAddEllipseInRect(UIGraphicsGetCurrentContext(), rect);
+  CGContextClosePath(UIGraphicsGetCurrentContext());
+  CGContextClip(UIGraphicsGetCurrentContext());
+  
+  [self drawInRect:rect];
+  
+  if (borderWidth > 0 && borderColor) {
+    CGContextBeginPath(UIGraphicsGetCurrentContext());
+    CGContextAddEllipseInRect(UIGraphicsGetCurrentContext(), CGRectMake(borderWidth / 2, borderWidth / 2, sizeToFit.width - borderWidth, sizeToFit.height - borderWidth));
+    CGContextClosePath(UIGraphicsGetCurrentContext());
+    CGContextSetLineWidth(UIGraphicsGetCurrentContext(), borderWidth);
+    CGContextSetStrokeColorWithColor(UIGraphicsGetCurrentContext(), borderColor.CGColor);
+    CGContextStrokePath(UIGraphicsGetCurrentContext());
+  }
+  UIImage *outImage = UIGraphicsGetImageFromCurrentImageContext();
+  
+  UIGraphicsEndImageContext();
+  
+  return outImage;
+}
+
+@end
+
+@implementation UIImage (Color)
+
++ (UIImage *)imageFromColor:(UIColor *)color {
+  CGRect rect = CGRectMake(0.0f, 0.0f, 1.0f, 1.0f);
+  UIGraphicsBeginImageContext(rect.size);
+  CGContextRef context = UIGraphicsGetCurrentContext();
+  CGContextSetFillColorWithColor(context, [color CGColor]);
+  CGContextFillRect(context, rect);
+  UIImage *theImage = UIGraphicsGetImageFromCurrentImageContext();
+  UIGraphicsEndImageContext();
+  return theImage;
 }
 
 @end

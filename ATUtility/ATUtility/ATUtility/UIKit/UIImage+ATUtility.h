@@ -10,7 +10,7 @@
 
 // http://code4app.com/ios/%E5%90%8E%E5%8F%B0%E6%A8%A1%E7%B3%8A%E6%95%88%E6%9E%9C/54912828933bf0d5388b4f25
 
-@interface UIImage (ATUtility)
+@interface UIImage (Blur)
 
 /*
  1.白色,参数:
@@ -29,8 +29,26 @@
 
 - (UIImage *)scanedImageWithMaxBytes:(NSUInteger)maxBytes;
 
-+ (UIImage *)imageFromColor:(UIColor *)color;
-
 - (UIImage *)imageWithGaussianBlurWithRadius:(NSNumber *)radius;
+
+@end
+
+@interface UIImage (Alpha)
+
+- (UIImage *)imageByApplyingAlpha:(CGFloat) alpha;
+
+@end
+
+@interface UIImage (RoundCorner)
+
+- (UIImage *)imageWithRoundCornerRadius:(CGFloat)radius sizeToFit:(CGSize)sizeToFit;
+
+- (UIImage *)imageWithRoundCornerRadius:(CGFloat)radius sizeToFit:(CGSize)sizeToFit borderWidth:(CGFloat)borderWidth borderColor:(UIColor *)borderColor;
+
+@end
+
+@interface UIImage (Color)
+
++ (UIImage *)imageFromColor:(UIColor *)color;
 
 @end

@@ -15,7 +15,6 @@
 		6ABBD5F21B49117F006750FF /* UIView+ATUTility.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ABBD5EF1B49117F006750FF /* UIView+ATUTility.m */; };
 		6ABBD5F31B49117F006750FF /* UIView+LTKAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ABBD5F11B49117F006750FF /* UIView+LTKAdditions.m */; };
 		6ABBD5F61B491235006750FF /* NSObject+ATUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ABBD5F51B491235006750FF /* NSObject+ATUtility.m */; };
-		EC1276A91D55A779004CF9BD /* UIImage+RoundCorner.m in Sources */ = {isa = PBXBuildFile; fileRef = EC1276A81D55A779004CF9BD /* UIImage+RoundCorner.m */; };
 		EC16E3E31D192E6A00DE3B5A /* NSString+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = EC16E3E21D192E6A00DE3B5A /* NSString+Hex.m */; };
 		EC2D64181BFEAE1800D00EBF /* UIDevice+ATUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = EC2D64171BFEAE1800D00EBF /* UIDevice+ATUtility.m */; };
 		EC2D641B1BFEAF0B00D00EBF /* UIImage+ATUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = EC2D641A1BFEAF0B00D00EBF /* UIImage+ATUtility.m */; };
@@ -35,7 +34,6 @@
 		EC5943AA1CDC6114003BC526 /* IQToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = EC5943811CDC6114003BC526 /* IQToolbar.m */; };
 		EC5943AB1CDC6114003BC526 /* IQUIView+IQKeyboardToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = EC5943831CDC6114003BC526 /* IQUIView+IQKeyboardToolbar.m */; };
 		EC5943AC1CDC6114003BC526 /* IQKeyboardManager.bundle in Resources */ = {isa = PBXBuildFile; fileRef = EC5943861CDC6114003BC526 /* IQKeyboardManager.bundle */; };
-		EC6046C91CDC27B8006214DD /* UIImage+Blur.m in Sources */ = {isa = PBXBuildFile; fileRef = EC6046C81CDC27B8006214DD /* UIImage+Blur.m */; };
 		EC6046CD1CDC2989006214DD /* UIScreen+ATUtitlity.m in Sources */ = {isa = PBXBuildFile; fileRef = EC6046CC1CDC2989006214DD /* UIScreen+ATUtitlity.m */; };
 		EC6046D01CDC2A25006214DD /* UITextField+ATUtitlity.m in Sources */ = {isa = PBXBuildFile; fileRef = EC6046CF1CDC2A25006214DD /* UITextField+ATUtitlity.m */; };
 		EC6046D41CDC3440006214DD /* LumberjackManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EC6046D31CDC3440006214DD /* LumberjackManager.m */; };
@@ -120,8 +118,6 @@
 		6ABBD5F11B49117F006750FF /* UIView+LTKAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+LTKAdditions.m"; sourceTree = "<group>"; };
 		6ABBD5F41B491235006750FF /* NSObject+ATUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+ATUtility.h"; sourceTree = "<group>"; };
 		6ABBD5F51B491235006750FF /* NSObject+ATUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+ATUtility.m"; sourceTree = "<group>"; };
-		EC1276A71D55A779004CF9BD /* UIImage+RoundCorner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+RoundCorner.h"; sourceTree = "<group>"; };
-		EC1276A81D55A779004CF9BD /* UIImage+RoundCorner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+RoundCorner.m"; sourceTree = "<group>"; };
 		EC16E3E11D192E6A00DE3B5A /* NSString+Hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Hex.h"; sourceTree = "<group>"; };
 		EC16E3E21D192E6A00DE3B5A /* NSString+Hex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Hex.m"; sourceTree = "<group>"; };
 		EC2D64161BFEAE1800D00EBF /* UIDevice+ATUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+ATUtility.h"; sourceTree = "<group>"; };
@@ -163,8 +159,6 @@
 		EC5943841CDC6114003BC526 /* KeyboardManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyboardManager.h; sourceTree = "<group>"; };
 		EC5943861CDC6114003BC526 /* IQKeyboardManager.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = IQKeyboardManager.bundle; sourceTree = "<group>"; };
 		EC597F0D1C9B95C40089B810 /* H264DecoderForiOS.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = H264DecoderForiOS.xcodeproj; path = H264Decoder/H264DecoderForiOS/H264DecoderForiOS.xcodeproj; sourceTree = "<group>"; };
-		EC6046C71CDC27B8006214DD /* UIImage+Blur.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Blur.h"; sourceTree = "<group>"; };
-		EC6046C81CDC27B8006214DD /* UIImage+Blur.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Blur.m"; sourceTree = "<group>"; };
 		EC6046CB1CDC2989006214DD /* UIScreen+ATUtitlity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScreen+ATUtitlity.h"; sourceTree = "<group>"; };
 		EC6046CC1CDC2989006214DD /* UIScreen+ATUtitlity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScreen+ATUtitlity.m"; sourceTree = "<group>"; };
 		EC6046CE1CDC2A25006214DD /* UITextField+ATUtitlity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+ATUtitlity.h"; sourceTree = "<group>"; };
@@ -649,10 +643,6 @@
 				6A5832541B7EE7D9007967F2 /* DismissKeyboardWindow.m */,
 				6ABBD5EE1B49117F006750FF /* UIView+ATUTility.h */,
 				6ABBD5EF1B49117F006750FF /* UIView+ATUTility.m */,
-				EC1276A71D55A779004CF9BD /* UIImage+RoundCorner.h */,
-				EC1276A81D55A779004CF9BD /* UIImage+RoundCorner.m */,
-				EC6046C71CDC27B8006214DD /* UIImage+Blur.h */,
-				EC6046C81CDC27B8006214DD /* UIImage+Blur.m */,
 				6ABBD5F01B49117F006750FF /* UIView+LTKAdditions.h */,
 				6ABBD5F11B49117F006750FF /* UIView+LTKAdditions.m */,
 				ECEA52DA1CDEBAF500FBB9D4 /* UIColor+Hex.h */,
@@ -846,7 +836,6 @@
 				EC5943A71CDC6114003BC526 /* IQBarButtonItem.m in Sources */,
 				ECEA52EA1CDEBB1900FBB9D4 /* RDVTabBarItem.m in Sources */,
 				EC6046D01CDC2A25006214DD /* UITextField+ATUtitlity.m in Sources */,
-				EC6046C91CDC27B8006214DD /* UIImage+Blur.m in Sources */,
 				EC6047331CDC3474006214DD /* DDFileLogger.m in Sources */,
 				ECEA52DC1CDEBAF500FBB9D4 /* UIColor+Hex.m in Sources */,
 				ECE9C20B1B462C2E009871AD /* AppDelegate.m in Sources */,
@@ -876,7 +865,6 @@
 				ECE9C2301B462C7D009871AD /* NSString+ATUtility.m in Sources */,
 				EC6047401CDC3474006214DD /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				EC59439E1CDC6114003BC526 /* IQNSArray+Sort.m in Sources */,
-				EC1276A91D55A779004CF9BD /* UIImage+RoundCorner.m in Sources */,
 				EC6047361CDC3474006214DD /* DDContextFilterLogFormatter.m in Sources */,
 				EC6046D41CDC3440006214DD /* LumberjackManager.m in Sources */,
 				EC2D641B1BFEAF0B00D00EBF /* UIImage+ATUtility.m in Sources */,
