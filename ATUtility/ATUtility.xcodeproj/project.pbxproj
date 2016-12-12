@@ -12,7 +12,7 @@
 		6ABBD5E41B48BF86006750FF /* NSDateTimeAgo.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6ABBD5E21B48BF86006750FF /* NSDateTimeAgo.bundle */; };
 		6ABBD5E71B48C031006750FF /* NSDate+ATUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ABBD5E61B48C031006750FF /* NSDate+ATUtility.m */; };
 		6ABBD5ED1B4908BB006750FF /* NSData+ATUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ABBD5EC1B4908BB006750FF /* NSData+ATUtility.m */; };
-		6ABBD5F21B49117F006750FF /* UIView+ATUTility.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ABBD5EF1B49117F006750FF /* UIView+ATUTility.m */; };
+		6ABBD5F21B49117F006750FF /* UIView+ATUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ABBD5EF1B49117F006750FF /* UIView+ATUtility.m */; };
 		6ABBD5F31B49117F006750FF /* UIView+LTKAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ABBD5F11B49117F006750FF /* UIView+LTKAdditions.m */; };
 		6ABBD5F61B491235006750FF /* NSObject+ATUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ABBD5F51B491235006750FF /* NSObject+ATUtility.m */; };
 		EC16E3E31D192E6A00DE3B5A /* NSString+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = EC16E3E21D192E6A00DE3B5A /* NSString+Hex.m */; };
@@ -112,8 +112,8 @@
 		6ABBD5E61B48C031006750FF /* NSDate+ATUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+ATUtility.m"; sourceTree = "<group>"; };
 		6ABBD5EB1B4908BB006750FF /* NSData+ATUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+ATUtility.h"; sourceTree = "<group>"; };
 		6ABBD5EC1B4908BB006750FF /* NSData+ATUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+ATUtility.m"; sourceTree = "<group>"; };
-		6ABBD5EE1B49117F006750FF /* UIView+ATUTility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ATUTility.h"; sourceTree = "<group>"; };
-		6ABBD5EF1B49117F006750FF /* UIView+ATUTility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ATUTility.m"; sourceTree = "<group>"; };
+		6ABBD5EE1B49117F006750FF /* UIView+ATUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ATUtility.h"; sourceTree = "<group>"; };
+		6ABBD5EF1B49117F006750FF /* UIView+ATUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ATUtility.m"; sourceTree = "<group>"; };
 		6ABBD5F01B49117F006750FF /* UIView+LTKAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+LTKAdditions.h"; sourceTree = "<group>"; };
 		6ABBD5F11B49117F006750FF /* UIView+LTKAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+LTKAdditions.m"; sourceTree = "<group>"; };
 		6ABBD5F41B491235006750FF /* NSObject+ATUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+ATUtility.h"; sourceTree = "<group>"; };
@@ -641,8 +641,8 @@
 				EC695B561CFE7FB00098DBEA /* AdjustHitAreaButton.m */,
 				6A5832531B7EE7D9007967F2 /* DismissKeyboardWindow.h */,
 				6A5832541B7EE7D9007967F2 /* DismissKeyboardWindow.m */,
-				6ABBD5EE1B49117F006750FF /* UIView+ATUTility.h */,
-				6ABBD5EF1B49117F006750FF /* UIView+ATUTility.m */,
+				6ABBD5EE1B49117F006750FF /* UIView+ATUtility.h */,
+				6ABBD5EF1B49117F006750FF /* UIView+ATUtility.m */,
 				6ABBD5F01B49117F006750FF /* UIView+LTKAdditions.h */,
 				6ABBD5F11B49117F006750FF /* UIView+LTKAdditions.m */,
 				ECEA52DA1CDEBAF500FBB9D4 /* UIColor+Hex.h */,
@@ -831,7 +831,7 @@
 				EC5943A31CDC6114003BC526 /* IQUIWindow+Hierarchy.m in Sources */,
 				EC60472E1CDC3474006214DD /* CocoaLumberjack.swift in Sources */,
 				EC60473F1CDC3474006214DD /* NSArray+MASAdditions.m in Sources */,
-				6ABBD5F21B49117F006750FF /* UIView+ATUTility.m in Sources */,
+				6ABBD5F21B49117F006750FF /* UIView+ATUtility.m in Sources */,
 				EC6047281CDC3474006214DD /* CAAnimation+Blocks.m in Sources */,
 				EC5943A71CDC6114003BC526 /* IQBarButtonItem.m in Sources */,
 				ECEA52EA1CDEBB1900FBB9D4 /* RDVTabBarItem.m in Sources */,

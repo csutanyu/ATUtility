@@ -17,7 +17,7 @@ typedef NS_OPTIONS(NSInteger, LinePosition) {
 };
 
 NS_ASSUME_NONNULL_BEGIN
-@interface UIView (ATUTility)
+@interface UIView (ATUtility)
 
 - (void)addDashLineInPosition:(LinePosition)position unitLength:(CGFloat)unitLength lineWidth:(CGFloat)lineWidth color:(UIColor *)color;
 - (void)addSolidLineInPosition:(LinePosition)position lineWidth:(CGFloat)lineWidth color:(UIColor *)color;

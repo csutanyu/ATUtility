@@ -6,9 +6,9 @@
 //  Copyright (c) 2015 arvin.tan. All rights reserved.
 //
 
-#import "UIView+ATUTility.h"
+#import "UIView+ATUtility.h"
 
-@implementation UIView (ATUTility)
+@implementation UIView (ATUtility)
 
 - (void)addDashLineInPosition:(LinePosition)position unitLength:(CGFloat)unitLength lineWidth:(CGFloat)lineWidth color:(UIColor *)color {
     UIBezierPath *path = [UIBezierPath bezierPath];
