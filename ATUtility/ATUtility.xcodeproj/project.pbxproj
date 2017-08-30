@@ -69,6 +69,7 @@
 		EC82A1891CE971C500A61A41 /* SettingsURLConstant.m in Sources */ = {isa = PBXBuildFile; fileRef = EC82A1881CE971C500A61A41 /* SettingsURLConstant.m */; };
 		EC82A18B1CE9848E00A61A41 /* WigglingCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC82A18A1CE9848E00A61A41 /* WigglingCollectionView.swift */; };
 		ECA5C1831D913FCE00A1192D /* UIImageView+KeyFrameAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA5C1821D913FCE00A1192D /* UIImageView+KeyFrameAnimation.m */; };
+		ECB536701F56B7C100AB2C77 /* PaddingLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = ECB5366F1F56B7C100AB2C77 /* PaddingLabel.m */; };
 		ECE9C2081B462C2E009871AD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ECE9C2071B462C2E009871AD /* main.m */; };
 		ECE9C20B1B462C2E009871AD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ECE9C20A1B462C2E009871AD /* AppDelegate.m */; };
 		ECE9C20E1B462C2E009871AD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECE9C20D1B462C2E009871AD /* ViewController.m */; };
@@ -239,6 +240,8 @@
 		EC82A18A1CE9848E00A61A41 /* WigglingCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WigglingCollectionView.swift; sourceTree = "<group>"; };
 		ECA5C1811D913FCE00A1192D /* UIImageView+KeyFrameAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+KeyFrameAnimation.h"; sourceTree = "<group>"; };
 		ECA5C1821D913FCE00A1192D /* UIImageView+KeyFrameAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+KeyFrameAnimation.m"; sourceTree = "<group>"; };
+		ECB5366E1F56B7C100AB2C77 /* PaddingLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaddingLabel.h; sourceTree = "<group>"; };
+		ECB5366F1F56B7C100AB2C77 /* PaddingLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaddingLabel.m; sourceTree = "<group>"; };
 		ECE9C2021B462C2E009871AD /* ATUtility.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ATUtility.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECE9C2061B462C2E009871AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ECE9C2071B462C2E009871AD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -649,6 +652,8 @@
 				ECEA52DB1CDEBAF500FBB9D4 /* UIColor+Hex.m */,
 				EC2D64161BFEAE1800D00EBF /* UIDevice+ATUtility.h */,
 				EC2D64171BFEAE1800D00EBF /* UIDevice+ATUtility.m */,
+				ECB5366E1F56B7C100AB2C77 /* PaddingLabel.h */,
+				ECB5366F1F56B7C100AB2C77 /* PaddingLabel.m */,
 				EC2D64191BFEAF0B00D00EBF /* UIImage+ATUtility.h */,
 				EC2D641A1BFEAF0B00D00EBF /* UIImage+ATUtility.m */,
 				EC6046CB1CDC2989006214DD /* UIScreen+ATUtitlity.h */,
@@ -850,6 +855,7 @@
 				EC6047391CDC3474006214DD /* MASCompositeConstraint.m in Sources */,
 				EC6047481CDC37BD006214DD /* LumberjackLogFormatter.m in Sources */,
 				6A5832551B7EE7D9007967F2 /* DismissKeyboardWindow.m in Sources */,
+				ECB536701F56B7C100AB2C77 /* PaddingLabel.m in Sources */,
 				EC5943A01CDC6114003BC526 /* IQUITextFieldView+Additions.m in Sources */,
 				EC60473D1CDC3474006214DD /* MASViewAttribute.m in Sources */,
 				ECA5C1831D913FCE00A1192D /* UIImageView+KeyFrameAnimation.m in Sources */,
