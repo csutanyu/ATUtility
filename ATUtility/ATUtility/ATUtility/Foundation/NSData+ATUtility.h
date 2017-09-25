@@ -11,6 +11,10 @@
 
 @interface NSData (ATUtility)
 
+#pragma mark - Hex
+
++ (NSData *) dataFromHex:(NSString *)str;
+
 #pragma mark - Crypto
 
 - (NSData *)AES256EncryptWithKey:(NSString *)key;
