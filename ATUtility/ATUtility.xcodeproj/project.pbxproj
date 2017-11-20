@@ -17,6 +17,7 @@
 		6ABBD5F61B491235006750FF /* NSObject+ATUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ABBD5F51B491235006750FF /* NSObject+ATUtility.m */; };
 		EC0BF88B1F7E3F3400E1902F /* ATSearchBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = EC0BF88A1F7E3F3400E1902F /* ATSearchBarView.m */; };
 		EC16E3E31D192E6A00DE3B5A /* NSString+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = EC16E3E21D192E6A00DE3B5A /* NSString+Hex.m */; };
+		EC1C12891FC2D0B6000716F8 /* ATSpinLock.m in Sources */ = {isa = PBXBuildFile; fileRef = EC1C12861FC2D0B5000716F8 /* ATSpinLock.m */; };
 		EC2D64181BFEAE1800D00EBF /* UIDevice+ATUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = EC2D64171BFEAE1800D00EBF /* UIDevice+ATUtility.m */; };
 		EC2D641B1BFEAF0B00D00EBF /* UIImage+ATUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = EC2D641A1BFEAF0B00D00EBF /* UIImage+ATUtility.m */; };
 		EC54C7C01C4E24E000684811 /* UIWindow+ATUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = EC54C7BF1C4E24E000684811 /* UIWindow+ATUtility.m */; };
@@ -124,6 +125,8 @@
 		EC0BF88A1F7E3F3400E1902F /* ATSearchBarView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATSearchBarView.m; sourceTree = "<group>"; };
 		EC16E3E11D192E6A00DE3B5A /* NSString+Hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Hex.h"; sourceTree = "<group>"; };
 		EC16E3E21D192E6A00DE3B5A /* NSString+Hex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Hex.m"; sourceTree = "<group>"; };
+		EC1C12861FC2D0B5000716F8 /* ATSpinLock.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATSpinLock.m; sourceTree = "<group>"; };
+		EC1C12881FC2D0B5000716F8 /* ATSpinLock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATSpinLock.h; sourceTree = "<group>"; };
 		EC2D64161BFEAE1800D00EBF /* UIDevice+ATUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+ATUtility.h"; sourceTree = "<group>"; };
 		EC2D64171BFEAE1800D00EBF /* UIDevice+ATUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+ATUtility.m"; sourceTree = "<group>"; };
 		EC2D64191BFEAF0B00D00EBF /* UIImage+ATUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ATUtility.h"; sourceTree = "<group>"; };
@@ -633,6 +636,8 @@
 				6ABBD5E61B48C031006750FF /* NSDate+ATUtility.m */,
 				6ABBD5EB1B4908BB006750FF /* NSData+ATUtility.h */,
 				6ABBD5EC1B4908BB006750FF /* NSData+ATUtility.m */,
+				EC1C12881FC2D0B5000716F8 /* ATSpinLock.h */,
+				EC1C12861FC2D0B5000716F8 /* ATSpinLock.m */,
 				6ABBD5E21B48BF86006750FF /* NSDateTimeAgo.bundle */,
 			);
 			path = Foundation;
@@ -748,6 +753,7 @@
 						CreatedOnToolsVersion = 6.3.1;
 						DevelopmentTeam = X5TW3SPY8J;
 						LastSwiftMigration = 0800;
+						ProvisioningStyle = Automatic;
 					};
 					ECE9C21A1B462C2E009871AD = {
 						CreatedOnToolsVersion = 6.3.1;
@@ -874,6 +880,7 @@
 				EC6047341CDC3474006214DD /* DDLog.m in Sources */,
 				EC695B571CFE7FB00098DBEA /* AdjustHitAreaButton.m in Sources */,
 				ECE9C2301B462C7D009871AD /* NSString+ATUtility.m in Sources */,
+				EC1C12891FC2D0B6000716F8 /* ATSpinLock.m in Sources */,
 				EC6047401CDC3474006214DD /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				EC59439E1CDC6114003BC526 /* IQNSArray+Sort.m in Sources */,
 				EC6047361CDC3474006214DD /* DDContextFilterLogFormatter.m in Sources */,
@@ -1019,13 +1026,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = ATUtility/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.arvintan.ATUtility;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -1035,13 +1045,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = ATUtility/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.arvintan.ATUtility;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "ATSpinLock.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +18,11 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    ATSpinLock spinlock = ATSpinLockInit;
+    ATSpinLockLock(&spinlock);
+    
+    ATSpinLockUnlock(&spinlock);
+    
 #ifdef __IPHONE_5_0
     NSLog(@"");
 #endif
