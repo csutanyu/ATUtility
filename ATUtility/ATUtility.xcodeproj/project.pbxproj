@@ -71,6 +71,7 @@
 		EC82A1891CE971C500A61A41 /* SettingsURLConstant.m in Sources */ = {isa = PBXBuildFile; fileRef = EC82A1881CE971C500A61A41 /* SettingsURLConstant.m */; };
 		EC82A18B1CE9848E00A61A41 /* WigglingCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC82A18A1CE9848E00A61A41 /* WigglingCollectionView.swift */; };
 		ECA5C1831D913FCE00A1192D /* UIImageView+KeyFrameAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA5C1821D913FCE00A1192D /* UIImageView+KeyFrameAnimation.m */; };
+		ECAB12FD1FC6C9F3007C8832 /* ATDynamicSpinLock.m in Sources */ = {isa = PBXBuildFile; fileRef = ECAB12FC1FC6C9F3007C8832 /* ATDynamicSpinLock.m */; };
 		ECB536701F56B7C100AB2C77 /* PaddingLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = ECB5366F1F56B7C100AB2C77 /* PaddingLabel.m */; };
 		ECE9C2081B462C2E009871AD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ECE9C2071B462C2E009871AD /* main.m */; };
 		ECE9C20B1B462C2E009871AD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ECE9C20A1B462C2E009871AD /* AppDelegate.m */; };
@@ -246,6 +247,8 @@
 		EC82A18A1CE9848E00A61A41 /* WigglingCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WigglingCollectionView.swift; sourceTree = "<group>"; };
 		ECA5C1811D913FCE00A1192D /* UIImageView+KeyFrameAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+KeyFrameAnimation.h"; sourceTree = "<group>"; };
 		ECA5C1821D913FCE00A1192D /* UIImageView+KeyFrameAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+KeyFrameAnimation.m"; sourceTree = "<group>"; };
+		ECAB12FB1FC6C9F3007C8832 /* ATDynamicSpinLock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATDynamicSpinLock.h; sourceTree = "<group>"; };
+		ECAB12FC1FC6C9F3007C8832 /* ATDynamicSpinLock.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATDynamicSpinLock.m; sourceTree = "<group>"; };
 		ECB5366E1F56B7C100AB2C77 /* PaddingLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaddingLabel.h; sourceTree = "<group>"; };
 		ECB5366F1F56B7C100AB2C77 /* PaddingLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaddingLabel.m; sourceTree = "<group>"; };
 		ECE9C2021B462C2E009871AD /* ATUtility.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ATUtility.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -638,6 +641,8 @@
 				6ABBD5EC1B4908BB006750FF /* NSData+ATUtility.m */,
 				EC1C12881FC2D0B5000716F8 /* ATSpinLock.h */,
 				EC1C12861FC2D0B5000716F8 /* ATSpinLock.m */,
+				ECAB12FB1FC6C9F3007C8832 /* ATDynamicSpinLock.h */,
+				ECAB12FC1FC6C9F3007C8832 /* ATDynamicSpinLock.m */,
 				6ABBD5E21B48BF86006750FF /* NSDateTimeAgo.bundle */,
 			);
 			path = Foundation;
@@ -867,6 +872,7 @@
 				EC6047481CDC37BD006214DD /* LumberjackLogFormatter.m in Sources */,
 				6A5832551B7EE7D9007967F2 /* DismissKeyboardWindow.m in Sources */,
 				ECB536701F56B7C100AB2C77 /* PaddingLabel.m in Sources */,
+				ECAB12FD1FC6C9F3007C8832 /* ATDynamicSpinLock.m in Sources */,
 				EC5943A01CDC6114003BC526 /* IQUITextFieldView+Additions.m in Sources */,
 				EC60473D1CDC3474006214DD /* MASViewAttribute.m in Sources */,
 				ECA5C1831D913FCE00A1192D /* UIImageView+KeyFrameAnimation.m in Sources */,
