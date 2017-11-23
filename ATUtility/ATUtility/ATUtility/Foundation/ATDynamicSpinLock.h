@@ -8,10 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
-@interface ATDynamicSpinLock : NSObject
+@interface ATDynamicSpinLock : NSObject <NSLocking>
 
 - (BOOL)tryLock;
-- (void)lock;
-- (void)unlock;
 
 @end
