@@ -70,6 +70,8 @@
 		EC71E6761C74205900CF5FC8 /* EACoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = EC71E6751C74205900CF5FC8 /* EACoordinator.m */; };
 		EC82A1891CE971C500A61A41 /* SettingsURLConstant.m in Sources */ = {isa = PBXBuildFile; fileRef = EC82A1881CE971C500A61A41 /* SettingsURLConstant.m */; };
 		EC82A18B1CE9848E00A61A41 /* WigglingCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC82A18A1CE9848E00A61A41 /* WigglingCollectionView.swift */; };
+		EC82FECE20EE0A400042A207 /* CALayer+ToImage.m in Sources */ = {isa = PBXBuildFile; fileRef = EC82FECB20EE0A400042A207 /* CALayer+ToImage.m */; };
+		EC82FED120EE0A930042A207 /* AVPlayerItemVideoOutput+ToImage.m in Sources */ = {isa = PBXBuildFile; fileRef = EC82FED020EE0A930042A207 /* AVPlayerItemVideoOutput+ToImage.m */; };
 		ECA5C1831D913FCE00A1192D /* UIImageView+KeyFrameAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA5C1821D913FCE00A1192D /* UIImageView+KeyFrameAnimation.m */; };
 		ECAB12FD1FC6C9F3007C8832 /* ATDynamicSpinLock.m in Sources */ = {isa = PBXBuildFile; fileRef = ECAB12FC1FC6C9F3007C8832 /* ATDynamicSpinLock.m */; };
 		ECB536701F56B7C100AB2C77 /* PaddingLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = ECB5366F1F56B7C100AB2C77 /* PaddingLabel.m */; };
@@ -245,6 +247,10 @@
 		EC82A1871CE971C500A61A41 /* SettingsURLConstant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsURLConstant.h; sourceTree = "<group>"; };
 		EC82A1881CE971C500A61A41 /* SettingsURLConstant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsURLConstant.m; sourceTree = "<group>"; };
 		EC82A18A1CE9848E00A61A41 /* WigglingCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WigglingCollectionView.swift; sourceTree = "<group>"; };
+		EC82FECB20EE0A400042A207 /* CALayer+ToImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+ToImage.m"; sourceTree = "<group>"; };
+		EC82FECC20EE0A400042A207 /* CALayer+ToImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+ToImage.h"; sourceTree = "<group>"; };
+		EC82FECF20EE0A920042A207 /* AVPlayerItemVideoOutput+ToImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AVPlayerItemVideoOutput+ToImage.h"; sourceTree = "<group>"; };
+		EC82FED020EE0A930042A207 /* AVPlayerItemVideoOutput+ToImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AVPlayerItemVideoOutput+ToImage.m"; sourceTree = "<group>"; };
 		ECA5C1811D913FCE00A1192D /* UIImageView+KeyFrameAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+KeyFrameAnimation.h"; sourceTree = "<group>"; };
 		ECA5C1821D913FCE00A1192D /* UIImageView+KeyFrameAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+KeyFrameAnimation.m"; sourceTree = "<group>"; };
 		ECAB12FB1FC6C9F3007C8832 /* ATDynamicSpinLock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATDynamicSpinLock.h; sourceTree = "<group>"; };
@@ -655,6 +661,10 @@
 				ECEA52E01CDEBB1900FBB9D4 /* RDVTabBarController */,
 				EC695B551CFE7FB00098DBEA /* AdjustHitAreaButton.h */,
 				EC695B561CFE7FB00098DBEA /* AdjustHitAreaButton.m */,
+				EC82FECF20EE0A920042A207 /* AVPlayerItemVideoOutput+ToImage.h */,
+				EC82FED020EE0A930042A207 /* AVPlayerItemVideoOutput+ToImage.m */,
+				EC82FECC20EE0A400042A207 /* CALayer+ToImage.h */,
+				EC82FECB20EE0A400042A207 /* CALayer+ToImage.m */,
 				6A5832531B7EE7D9007967F2 /* DismissKeyboardWindow.h */,
 				6A5832541B7EE7D9007967F2 /* DismissKeyboardWindow.m */,
 				6ABBD5EE1B49117F006750FF /* UIView+ATUtility.h */,
@@ -847,6 +857,7 @@
 				ECEA52E71CDEBB1900FBB9D4 /* RAReorderableLayout.swift in Sources */,
 				EC5943A51CDC6114003BC526 /* IQKeyboardReturnKeyHandler.m in Sources */,
 				EC6047301CDC3474006214DD /* DDAbstractDatabaseLogger.m in Sources */,
+				EC82FECE20EE0A400042A207 /* CALayer+ToImage.m in Sources */,
 				EC60473C1CDC3474006214DD /* MASLayoutConstraint.m in Sources */,
 				EC6047381CDC3474006214DD /* DDMultiFormatter.m in Sources */,
 				EC5943A31CDC6114003BC526 /* IQUIWindow+Hierarchy.m in Sources */,
@@ -863,6 +874,7 @@
 				EC6047431CDC3474006214DD /* LoggerClient.m in Sources */,
 				EC60473B1CDC3474006214DD /* MASConstraintMaker.m in Sources */,
 				EC5943AA1CDC6114003BC526 /* IQToolbar.m in Sources */,
+				EC82FED120EE0A930042A207 /* AVPlayerItemVideoOutput+ToImage.m in Sources */,
 				EC5943AB1CDC6114003BC526 /* IQUIView+IQKeyboardToolbar.m in Sources */,
 				6ABBD5E71B48C031006750FF /* NSDate+ATUtility.m in Sources */,
 				EC60472F1CDC3474006214DD /* MiniStationLogFormatter.m in Sources */,
