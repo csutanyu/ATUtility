@@ -8,6 +8,8 @@
 
 #import "UIImage+ATUtility.h"
 #import <Accelerate/Accelerate.h>
+#import <ImageIO/ImageIO.h>
+#import <MobileCoreServices/MobileCoreServices.h>
 
 @implementation UIImage (Blur)
 
@@ -280,3 +282,23 @@
 }
 
 @end
+
+BOOL CGImageWriteToFile(CGImageRef image, NSString *path) {
+    CFURLRef url = (__bridge CFURLRef)[NSURL fileURLWithPath:path];
+    CGImageDestinationRef destination = CGImageDestinationCreateWithURL(url, kUTTypePNG, 1, NULL);
+    if (!destination) {
+        NSLog(@"Failed to create CGImageDestination for %@", path);
+        return NO;
+    }
+    
+    CGImageDestinationAddImage(destination, image, nil);
+    
+    if (!CGImageDestinationFinalize(destination)) {
+        NSLog(@"Failed to write image to %@", path);
+        CFRelease(destination);
+        return NO;
+    }
+    
+    CFRelease(destination);
+    return YES;
+}

@@ -52,3 +52,7 @@
 + (UIImage *)imageFromColor:(UIColor *)color;
 
 @end
+
+#pragma mark - Functionality about image
+
+FOUNDATION_EXTERN BOOL CGImageWriteToFile(CGImageRef image, NSString *path);
