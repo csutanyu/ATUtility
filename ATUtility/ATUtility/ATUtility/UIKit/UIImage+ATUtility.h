@@ -53,6 +53,12 @@
 
 @end
 
+@interface UIImage (blur)
+
+- (UIImage *)gaussianBlurWithRadius:(NSInteger)radius;
+
+@end
+
 #pragma mark - Functionality about image
 
 FOUNDATION_EXTERN BOOL CGImageWriteToFile(CGImageRef image, NSString *path);

@@ -302,3 +302,26 @@ BOOL CGImageWriteToFile(CGImageRef image, NSString *path) {
     CFRelease(destination);
     return YES;
 }
+
+@implementation UIImage (blur)
+
+- (UIImage *)gaussianBlurWithRadius:(NSInteger)radius {
+    CIContext *context = [CIContext contextWithOptions:nil];
+    CIImage *inputImage = [[CIImage alloc] initWithImage:self];
+
+    CIFilter *clampFilter = [CIFilter filterWithName:@"CIAffineClamp"];
+    [clampFilter setDefaults];
+    [clampFilter setValue:inputImage forKey:kCIInputImageKey];
+    
+    CIFilter *filter = [CIFilter filterWithName:@"CIGaussianBlur"];
+    [filter setValue:clampFilter.outputImage forKey:kCIInputImageKey];
+    [filter setValue:[NSNumber numberWithFloat:radius] forKey:@"inputRadius"];
+    CIImage *result = [filter valueForKey:kCIOutputImageKey];
+    CGImageRef cgImage = [context createCGImage:result fromRect:[inputImage extent]];
+    UIImage *blurImage = [[UIImage alloc] initWithCGImage:cgImage scale:self.scale orientation:UIImageOrientationUp];
+    CGImageRelease(cgImage);
+    
+    return blurImage;
+}
+
+@end
